@@ -11,7 +11,7 @@ function App() {
   return (
     <Router>
       <Header />
-      <main>
+      <main className="app-content">
           <Switch>
             <Route path="/" exact>
               <Home />

@@ -1,49 +1,18 @@
-html {
-  box-sizing: border-box;
-  font-size: 100%;
-  line-height: 1.5;
-  color: #2f2a2a;
-}
-
-*, *:before, *:after {
-  box-sizing: inherit;
-}
-
-html,
-body,
-[id="root"] {
-  height: 100%;
-}
-
-body {
-  overflow: hidden;
-  background: linear-gradient(to right, #fffbfb, #fffbfb 50%, #fff3f9 50%, #fff3f9);
-  background-size: 15.4vw 100%;
-}
-
-img {
-  vertical-align: middle;
-}
-
-[id="root"] {
-  display: grid;
-  grid-template-rows: auto 1fr auto;
-}
-
-main {
-  overflow: auto;
-}
-
 .app-header {
-  display: flex;
-  align-items: center;
-  padding: 0.75em;
-  background-image: radial-gradient(#fffbfb .25em, transparent .25em), 
-                    radial-gradient(#fffbfb .25em, transparent .25em);
-  background-color: #2f2a2a;
+  background-image: radial-gradient(var(--off-white) .25em, transparent .25em), 
+                    radial-gradient(var(--off-white) .25em, transparent .25em);
+  background-color: var(--base-color);
   background-position: 0 0, 1.5em 1.5em;
   background-size: 3em 3em;
   font-family: 'Tangerine', cursive, serif;
+  font-size: clamp(1rem , 2.4vw, 1.9rem);
+}
+
+.app-header-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding: 0.75em 0.5em 0.75em 0.2em;
 }
 
 .app-header a {
@@ -56,71 +25,78 @@ main {
 .app-header nav {
   flex-grow: 1;
   display: none;
-  justify-content: space-between;
-  margin: 0 0.5em;
+  justify-content: space-around;
+  margin: 0 0.3em;
 }
 
+.app-header .menu-action,
 .app-header nav a {
   border-radius: 50%;
-  margin: 0.5vw;
+  margin: 0.3em;
   padding: 0.5em;
-  background-color: #d93d76;
-  border: 2px dotted;
-  box-shadow: 0 0 0 2px #d93d76;
-  font-size: 2.5vw;
-  font-weight: bold;
-  color: #fffbfb;
+  background-color: var(--primary);
+  border: 3px dotted;
+  box-shadow: 0 0 0 4px var(--primary);
+  font-size: 1.1em;
+  font-weight: 700;
 }
 
+.app-header .menu-action:focus,
+.app-header .menu-action:hover,
 .app-header nav a:focus,
 .app-header nav a:hover,
 .app-header nav a:active {
-  background-color: #bf3459;
-  box-shadow: 0 0 0 2px #bf3459;
+  background-color: var(--primary-dark);
+  box-shadow: 0 0 0 4px var(--primary-dark);
+  text-decoration: none;
 }
 
 .app-header .logo {
   display: inline-block;  
   border-radius: 50%;
-  border: 3px dotted #d93d76;
-  box-shadow: 0 0 0 3px #fff3f9;
-  margin-right: 0.5vw;
+  border: 4px dotted var(--primary-darker);
+  box-shadow: 0 0 0 6px var(--off-white);
+  margin-right: 0.3em;
   padding: 0.4em 0.5em 0.25em 0.25em;
-  background-color: #fffbfb;
-  font-size: 2em;
+  background-color: var(--off-white);
+  font-size: 1.8em;
+  font-weight: 300;
+}
+
+.app-header .logo:hover,
+.app-header .logo:focus,
+.app-header .logo:active {
+  text-decoration: none;
 }
 
 .app-header .menu-action {
-  border: 2px dotted;
-  border-radius: 50%;
-  box-shadow: 0 0 0 2px #d93d76;
   margin-left: auto;
-  padding: 0.75em;
-  background: #d93d76;
-  color: #fffbfb;
+  padding: 0.35em 0.5em;
+  font-size: 1.25em;
 }
 
 .app-header .poodle-icon {
   display: none;
   position: absolute;
-  top: -3vw;
-  right: -1vw;
-  width: 18vw;
-  height: 18vw;
+  top: clamp(-1.5em, -3vw, -1em);
+  right: clamp(-0.6em, -1.4vw, -0.5em);
+  width: clamp(0px, 17vw, 8em);
+  height: clamp(0px, 17vw, 8em);
 }
 
 .app-footer {
   display: flex;
   align-items: center;
-  padding: 0.3em 0.75em;
-  background-color: #2f2a2a;
-  color: #fff3f9;
+  padding: 0.5em 0.75em;
+  background-color: var(--base-color);
+  color: var(--off-white);
+  font-size: var(--small-font-size);
 }
 
 .app-footer .fa-paw {
   font-size: 2em;
   margin-right: 0.3em;
-  color: #d93d76;
+  color: var(--primary);
 }
 
 .footer-nav {
@@ -137,44 +113,33 @@ main {
   height: 1.7em;
   width: 1.7em;
   border-radius: 50%;
-  border: 1px dotted;
-  box-shadow: 0 0 0 1px #d93d76;
-  margin: 0 0.25em 0 0.75em;
-  background-color: #d93d76;
+  border: 2px dotted;
+  box-shadow: 0 0 0 2px var(--primary);
+  margin: 0 0.35em 0 1em;
+  background-color: var(--primary);
   font-size: 1.2em;
   text-align: center;
+  color: var(--base-color);
 }
-
 
 .footer-nav-icon:focus,
 .footer-nav-icon:hover,
 .footer-nav-icon:active {
-  background-color: #bf3459;
-  box-shadow: 0 0 0 1px #bf3459;
+  background-color: var(--primary-dark);
+  box-shadow: 0 0 0 3px var(--primary-dark);
 }
-
 
 .footer-nav-description {
   display: none;
-  vertical-align: middle;
-}
-
-.footer-nav .svg-inline--fa {
-  color: inherit;
-  vertical-align: middle;
 }
 
 @media only screen and (min-width: 850px) {
-  .app-header {
-    padding-right: 15vw;
+  .app-header-wrapper {
+    padding-right: clamp(0px, 15.6vw, 7em);
   }
 
   .app-header nav {
     display: flex;
-  }
-
-  .app-header .logo {
-    font-size: 5.5vw;
   }
 
   .app-header .poodle-icon,
@@ -185,4 +150,20 @@ main {
   .app-header .menu-action {
     display: none;
   }
+}
+
+@media only screen and (min-width: 1974px) { 
+  .app-content {
+    padding-left: calc((100% - 1920px)/2);
+    padding-right: calc((100% - 1920px)/2);
+  }
+
+  .app-header-wrapper {
+    margin-left: -0.5em;
+  }
+}
+
+.placeholder {
+  background: var(--primary);
+  min-height: 20em;
 }

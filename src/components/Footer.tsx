@@ -4,7 +4,7 @@ import { faFacebookF } from '@fortawesome/free-brands-svg-icons';
 
 function Footer() {
   return (
-      <footer className="app-footer">
+      <footer className="app-footer app-content">
         <FontAwesomeIcon icon={faPaw} />
         <span>Barb Dunlop</span>
 
