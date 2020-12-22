@@ -80,8 +80,8 @@
   position: absolute;
   top: clamp(-1.5em, -3vw, -1em);
   right: clamp(-0.6em, -1.4vw, -0.5em);
-  width: clamp(1px, 17vw, 8em);
-  height: clamp(1px, 17vw, 8em);
+  width: clamp(1em, 20vw, 9em);
+  height: clamp(1em, 18vw, 8em);
 }
 
 .app-footer {
@@ -135,7 +135,7 @@
 
 @media only screen and (min-width: 850px) {
   .app-header-wrapper {
-    padding-right: clamp(1px, 15.6vw, 7em);
+    padding-right: clamp(1em, 15.6vw, 7em);
   }
 
   .app-header nav {
