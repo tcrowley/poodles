@@ -8,7 +8,7 @@ function handleErrors(response) {
 
 const picturesSerice = {
     getCount() {
-        return fetch('http://pamperedpoodles4u.net/PHP/api/pictureCount.php')
+        return fetch('https://pamperedpoodles4u.net/PHP/api/pictureCount.php')
             .then(handleErrors)
             .then(response => response.json())
             .catch(error => console.log(error) );
