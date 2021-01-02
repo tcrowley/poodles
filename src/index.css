@@ -6,6 +6,7 @@
   --primary: #F2BBD5;
   --primary-dark: #de93b7;
   --primary-darker: #bf4565;
+  --default-margin: 1.2rem;
 }
 
 html {
@@ -27,7 +28,6 @@ body,
 }
 
 body {
-  overflow: hidden;
   margin: 0;
   background-color: var(--off-white);
   background-image: linear-gradient(to right, #f9f9f9, #f9f9f9 1px, #f7f7f7 3px, var(--off-white) 50%, #ebebeb 50%, #ededed);
@@ -60,7 +60,7 @@ img {
 
 h1, h2, h3, h4, h5, h6, p {
   margin: 0;
-  margin-bottom: 1.2rem;
+  margin-bottom: var(--default-margin);
   line-height: normal;
 }
 
@@ -99,6 +99,7 @@ h1, h2, h3, h4, h5, h6, p {
 [id="root"] {
   display: grid;
   grid-template-rows: auto 1fr auto;
+  overflow: hidden;
 }
 
 main {

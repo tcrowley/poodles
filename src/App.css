@@ -1,18 +1,18 @@
 .app-header {
-  background-image: radial-gradient(var(--off-white) .25em, transparent .25em), 
-                    radial-gradient(var(--off-white) .25em, transparent .25em);
+  background-image: radial-gradient(var(--off-white) .2em, transparent .2em), 
+                    radial-gradient(var(--off-white) .2em, transparent .2em);
   background-color: var(--base-color);
-  background-position: 0 0, 1.5em 1.5em;
-  background-size: 3em 3em;
+  background-position: 0 0, 1em 1em;
+  background-size: 2em 2em;
   font-family: 'Tangerine', cursive, serif;
-  font-size: clamp(1rem , 2.4vw, 1.9rem);
+  font-size: clamp(1rem , 2vw, 1.9rem);
 }
 
 .app-header-wrapper {
   position: relative;
   display: flex;
   align-items: center;
-  padding: 0.75em 0.5em 0.75em 0.2em;
+  padding: 0.5em 0.5em 0.5em 0.2em;
 }
 
 .app-header a {
@@ -37,7 +37,7 @@
   background-color: var(--primary);
   border: 3px dotted;
   box-shadow: 0 0 0 4px var(--primary);
-  font-size: 1.1em;
+  font-size: 1.2em;
   font-weight: 700;
 }
 
@@ -59,7 +59,7 @@
   margin-right: 0.3em;
   padding: 0.4em 0.5em 0.25em 0.25em;
   background-color: var(--off-white);
-  font-size: 1.8em;
+  font-size: 2em;
   font-weight: 300;
 }
 
@@ -78,6 +78,7 @@
 .app-header .poodle-icon {
   display: none;
   position: absolute;
+  z-index: 1;
   top: clamp(-1.5em, -3vw, -1em);
   right: clamp(-0.6em, -1.4vw, -0.5em);
   width: clamp(1em, 20vw, 9em);
@@ -163,7 +164,75 @@
   }
 }
 
-.placeholder {
-  background: var(--primary);
-  min-height: 20em;
+
+
+/**************************  home ****************************/
+.home-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.home-content .app-h1,
+.home-content .app-lead-paragraph {
+  order: -1;
+}
+
+.app-carousel {
+  position: relative;
+  height: 50vh;
+  max-width: 100%;
+  margin-bottom: var(--default-margin);
+  padding: 1.5em 1.5em 3.5em 1.5em;
+  text-align: center;
+  overflow: hidden;
+}
+
+.app-carousel img {
+  position: relative;
+  top: 50%;
+  transform: translate(0, -50%);
+  display: none;
+  max-height: 100%;
+  max-width: 100%;
+  box-shadow: 0 0 0 0.1875em var(--off-white), 0 0 0 0.3125em var(--base-color), 0 0 0 0.75em var(--off-white), 0 0 0 1.25em var(--primary);
+  object-fit: scale-down;
+}
+
+.app-carousel img.current {
+  display: inline-block;
+}
+
+.app-carousel-actions {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.app-carousel button {
+  border: none;
+  background: none;
+  margin-top: 0.3em;
+  padding: 0.5em;
+  font-size: 0.6em;
+  opacity: 0.5;
+  cursor: pointer;
+}
+
+.app-carousel button.current {
+  opacity: 1;
+}
+
+@media only screen and (min-width: 1200px) { 
+  .home-content {
+    display: block;
+  }
+
+  .app-carousel {
+    float: right;
+    height: 65vh;
+    width: 55%;
+    margin-left: var(--default-margin);
+    margin-right: var(--default-margin);
+  }
 }
