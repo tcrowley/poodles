@@ -22,7 +22,7 @@
   line-height: normal;
 }
 
-.app-header nav {
+.app-header .app-main-nav {
   flex-grow: 1;
   display: none;
   justify-content: space-around;
@@ -30,7 +30,7 @@
 }
 
 .app-header .menu-action,
-.app-header nav a {
+.app-header .app-main-nav a {
   border-radius: 50%;
   margin: 0.3em;
   padding: 0.5em;
@@ -43,12 +43,57 @@
 
 .app-header .menu-action:focus,
 .app-header .menu-action:hover,
-.app-header nav a:focus,
-.app-header nav a:hover,
-.app-header nav a:active {
+.app-header .app-main-nav a:focus,
+.app-header .app-main-nav a:hover,
+.app-header .app-main-nav a:active {
   background-color: var(--primary-dark);
   box-shadow: 0 0 0 4px var(--primary-dark);
   text-decoration: none;
+}
+
+.app-header .close-menu-action {
+  float: right;
+  border: none;
+  background: none;
+  margin-top: -0.5em;
+  margin-bottom: 0.75em;
+  padding: 0.75em;
+}
+
+.app-header .close-menu-action .fa-times {
+  margin-left: .15em;
+  font-size: 1.75em;
+  vertical-align: -0.25em;
+}
+
+.app-header .app-popover-nav {
+  position: absolute;
+  z-index: 1;
+  top: 0.5em;
+  right: 0.5em; 
+  width: 96%;
+  max-width: 25em;
+  padding: 1em 0.6em;
+  background-color: var(--off-white);
+  box-shadow: -2px 2px 5px #aaa;
+}
+
+.app-header .app-popover-nav a {
+  display: block;
+  padding: 0.25em 1em;
+  border-top: 1px solid var(--grey);
+  font-family: 'Work Sans', sans-serif;
+  font-weight: inherit;
+  font-size: 1.5em;
+  line-height: inherit;
+  text-align: left;
+  text-decoration: none;
+  clear: right;
+}
+
+.app-header .app-popover-nav a:hover,
+.app-header .app-popover-nav a:focus {
+  background-color: var(--grey);
 }
 
 .app-header .logo {
@@ -57,10 +102,17 @@
   border: 4px dotted var(--primary-darker);
   box-shadow: 0 0 0 6px var(--off-white);
   margin-right: 0.3em;
-  padding: 0.4em 0.5em 0.25em 0.25em;
+  padding: 0.2em 0.5em 0 0.25em;
   background-color: var(--off-white);
   font-size: 2em;
   font-weight: 300;
+  line-height: 1;
+}
+
+.app-header .logo small {
+  display: block;
+  font-size: 0.7em;
+  margin-top: -0.3em;
 }
 
 .app-header .logo:hover,
@@ -139,8 +191,12 @@
     padding-right: clamp(1em, 15.6vw, 7em);
   }
 
-  .app-header nav {
+  .app-header .app-main-nav {
     display: flex;
+  }
+
+  .app-header .app-popover-nav {
+    display: none;
   }
 
   .app-header .poodle-icon,

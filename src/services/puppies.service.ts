@@ -6,13 +6,13 @@ function handleErrors(response) {
     return response;
 }
 
-const picturesService = {
-    getCount() {
-        return fetch('https://pamperedpoodles4u.net/PHP/api/pictureCount.php')
+const puppiesService = {
+    getAvailablePuppies() {
+        return fetch('https://pamperedpoodles4u.net/PHP/api/availablePuppies.php')
             .then(handleErrors)
             .then(response => response.json())
             .catch(error => console.log(error) );
     }
 }
 
-export default picturesService;
+export default puppiesService;
