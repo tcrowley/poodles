@@ -39,6 +39,7 @@
   box-shadow: 0 0 0 4px var(--primary);
   font-size: 1.2em;
   font-weight: 700;
+  cursor: pointer;
 }
 
 .app-header .menu-action:focus,
@@ -58,6 +59,7 @@
   margin-top: -0.5em;
   margin-bottom: 0.75em;
   padding: 0.75em;
+  cursor: pointer;
 }
 
 .app-header .close-menu-action .fa-times {
