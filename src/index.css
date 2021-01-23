@@ -1,4 +1,5 @@
 :root {
+  --accent-font: 'Tangerine', cursive, serif;
   --small-font-size: 0.833em;
   --base-color: #0D0D0D;
   --off-white: #f2f2f2;
@@ -7,6 +8,7 @@
   --primary-dark: #de93b7;
   --primary-darker: #bf4565;
   --default-margin: 1.2rem;
+  --frame-shadow: 0 0 0 0.1875em var(--off-white), 0 0 0 0.3125em var(--base-color), 0 0 0 0.75em var(--off-white), 0 0 0 1.25em var(--primary);
 }
 
 html {
@@ -30,7 +32,7 @@ body,
 body {
   margin: 0;
   background-color: var(--off-white);
-  background-image: linear-gradient(to right, #f9f9f9, #f9f9f9 1px, #f7f7f7 3px, var(--off-white) 50%, #ebebeb 50%, #ededed);
+  background-image: linear-gradient(to right, #f9f9f9, #f9f9f9 2px, #f7f7f7 2px, var(--off-white) 50%, #ededed 50%, #f3f3f3);
   background-size: clamp(2.35em, 5vw, 2.5em) 100%;
   font-family: 'Work Sans', sans-serif;
   font-weight: 300;
@@ -38,8 +40,11 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+article + article {
+  margin-top: calc(var(--default-margin) * 3);
+}
+
 a {
-  font-weight: 400;
   color: var(--primary-darker);
   text-decoration: none;
 }
@@ -62,35 +67,27 @@ h1, h2, h3, h4, h5, h6, p {
   margin: 0;
   margin-bottom: var(--default-margin);
   line-height: normal;
+  font-weight: inherit;
 }
 
 .app-h1 {
-  font-size: 2.488em;
-  font-weight: 200;
+  font-family: var(--accent-font);
+  font-size: 3.5em;
+  font-weight: 400;
 }
 
 .app-h2 {
-  font-size: 2.074em;
-  font-weight: 200;
+  font-size: 1.602em;
+  color: var(--primary-darker);
 }
 
 .app-h3 {
-  font-size: 1.728em;
-  font-weight: 200;
-}
-
-.app-h4 {
-  font-size: 1.44em;
-  font-weight: 200;
-}
-
-.app-h5 {
-  font-size: 1.2em;
-  font-weight: 200;
+  font-size: 1.424em;
+  font-weight: 400;
 }
 
 .app-lead-paragraph {
-  font-size: 1.44em;
+  font-size: 1.266em;
   color: var(--primary-darker);
   margin-top: -1rem;
 }
@@ -103,6 +100,6 @@ h1, h2, h3, h4, h5, h6, p {
 }
 
 main {
-  padding: 1.5rem;
+  padding: var(--default-margin);
   overflow: auto;
 }

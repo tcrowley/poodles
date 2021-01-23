@@ -4,7 +4,7 @@
   background-color: var(--base-color);
   background-position: 0 0, 1em 1em;
   background-size: 2em 2em;
-  font-family: 'Tangerine', cursive, serif;
+  font-family: var(--accent-font);
   font-size: clamp(1rem , 2vw, 1.9rem);
 }
 
@@ -107,7 +107,6 @@
   padding: 0.2em 0.5em 0 0.25em;
   background-color: var(--off-white);
   font-size: 2em;
-  font-weight: 300;
   line-height: 1;
 }
 
@@ -137,6 +136,26 @@
   right: clamp(-0.6em, -1.4vw, -0.5em);
   width: clamp(1em, 20vw, 9em);
   height: clamp(1em, 18vw, 8em);
+}
+
+.app-sub-nav {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  margin: calc(var(--default-margin) * -1);
+  margin-bottom: var(--default-margin);
+  padding: 0.25rem 5vw;
+  background-color: var(--grey);
+}
+
+.app-sub-nav a {
+  padding: 0 0.5em;
+  color: inherit;
+  white-space: nowrap;
+}
+
+.app-sub-nav .active {
+  font-weight: bold;
 }
 
 .app-footer {
@@ -211,14 +230,50 @@
   }
 }
 
+.app-content-with-media {
+  display: flex;
+  margin-left: calc(var(--default-margin)/2 * -1);
+  margin-right: calc(var(--default-margin)/2 * -1);
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.app-content-with-media.wrap-reverse {
+  flex-wrap: wrap-reverse;
+}
+
+.app-content-with-media > * {
+  flex: 1 1 0;
+  margin: 0 calc(var(--default-margin)/2);
+  min-width: 17.5em;
+  max-width: 100%;
+}
+
+.app-content-with-media .media-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.app-content-with-media .media-container > * {
+  object-fit: cover;
+  max-height: 50vh;
+  max-width: 100%;
+}
+
 @media only screen and (min-width: 1974px) { 
   .app-content {
-    padding-left: calc((100% - 1920px)/2);
-    padding-right: calc((100% - 1920px)/2);
+    padding-left: calc((100vw - 1920px)/2);
+    padding-right: calc((100vw - 1920px)/2);
   }
 
   .app-header-wrapper {
     margin-left: -0.5em;
+  }
+
+  .app-sub-nav {
+    margin-left: calc((100vw - 1920px)/2 * -1);
+    margin-right: calc((100vw - 1920px)/2 * -1);
   }
 }
 
@@ -240,14 +295,14 @@
   height: 50vh;
   max-width: 100%;
   margin-bottom: var(--default-margin);
-  padding: 1.5em 1.5em 3.5em 1.5em;
+  padding: 2.7em 1.5em 3.5em 1.5em;
   text-align: center;
   overflow: hidden;
 }
 
 .app-carousel img {
   position: relative;
-  top: 50%;
+  top: 45%;
   transform: translate(0, -50%);
   display: none;
   max-height: 100%;
@@ -293,4 +348,25 @@
     margin-left: var(--default-margin);
     margin-right: var(--default-margin);
   }
+}
+
+/**************************  about ****************************/
+
+.about-us-intro {
+  max-width: 30em;
+  font-size: 1.266em;
+}
+
+.app-quote {
+  width: 33em;
+  max-width: calc(100% - 2.5em);
+  margin: calc(var(--default-margin) * 2) auto var(--default-margin);
+  background: #ddd;
+  padding: 1em;
+  box-shadow: var(--frame-shadow);
+  font-size: 0.675em;
+}
+
+.app-quote blockquote {
+  margin: 0;
 }
