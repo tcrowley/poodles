@@ -44,7 +44,7 @@ function Faq() {
       </details>
 
       <details>
-        <summary><h2 className="app-h2">Breeding and Breeders</h2></summary>
+        <summary><h2 className="app-h2">Breeding & Breeders</h2></summary>
         <h3 className="app-h4">Thinking about adding one of our poodles to your breeding program?</h3>
         <p>
           If you're looking to start a breeding program, please do not contact us about our puppies. We do not allow them to be bred and we do not make exceptions. I am also not interested in mentoring. I "mentor" my daughter and that is enough for me.
@@ -252,7 +252,7 @@ function Faq() {
 
 
       <details>
-        <summary><h2 className="app-h2">Products and Services</h2></summary>
+        <summary><h2 className="app-h2">Products & Services</h2></summary>
         <h3 className="app-h4">Pet Sitting</h3>
         <p>
           Harlee, my granddaughter, pet sits!
