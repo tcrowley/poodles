@@ -25,7 +25,7 @@ function About() {
 
       <article className="app-content-with-media">
         <div>
-          <h3 className="app-h2">Our Poodles are <em>pets</em> not breeding <em>stock</em></h3>
+          <h2 className="app-h2">Our Poodles are <em>pets</em> not breeding <em>stock</em></h2>
           <p>
             Every poodle is a beloved pet, here with us for life! We do not unload them when they are no longer "useful"! Because they are with us at all times we know what health and personality traits they will pass on to their babies.
           </p>
@@ -44,7 +44,7 @@ function About() {
           <img src={ beemerPontoonImg } alt="pontoon ride" /> 
         </div>
         <div>
-          <h3 className="app-h2">Don't ask to come visit my <em>facility</em></h3>
+          <h2 className="app-h2">Don't ask to come visit my <em>facility</em></h2>
           <p>
             We are not a kennel or a FACILITY! We are a home with pets that have puppies. Our adult poodles are with us at all times. NO ONE IS CAGED (unless someone is in season) or in kennels outside (we don't have any). In the event we do leave them, they stay home and guard the house. The pontoon NEVER leaves the dock without them and we swim a few times a week.
           </p>
@@ -54,7 +54,7 @@ function About() {
 
       <article className="app-content-with-media">
         <div>
-          <h3 className="app-h2">Our puppies are <em>fabulous</em></h3>
+          <h2 className="app-h2">Our puppies are <em>fabulous</em></h2>
           <p>
             We adore each and every puppy! They are treated as if we were going to keep them - because we'd like to! Every puppy has their own webpage with daily photos and while the website may change over time, we never remove puppy pages. Our website is a scrapbook of the puppies we love.
           </p>
@@ -85,7 +85,7 @@ function About() {
           <img src={ puppyDoorImg } alt="momma dog peeking out the puppy door" /> 
         </div>
         <div>
-          <h3 className="app-h2"> Visitors are welcome... at the proper time</h3>
+          <h2 className="app-h2"> Visitors are welcome... at the proper time</h2>
           <p>
             Ten adult poodles and puppies keep me very busy, Although I am retired, I'm sure you can uderstand my time is very valuable. I can not spend time with visitors when we do not have available babies, as what typically happens is, people leave so impressed with my poodles and so excited about a new poodle puppy, they don't wait for one of mine. I get a nice letter and photo of their new puppy thanking me for my time. I hope I don't sound rude, but our home is not a "petting zoo".  
           </p>
@@ -98,7 +98,7 @@ function About() {
 
       <article className="app-content-with-media">
         <div>
-          <h3 className="app-h2">We carefully select homes for our poodle babies</h3>
+          <h2 className="app-h2">We carefully select homes for our poodle babies</h2>
           <p>
               I carefully select PET homes. I have certain things I look for when we talk. In my 20 plus years of finding homes for my babies, these "things" have proven to be the formula for a happy poodle life. I do all I can to ensure the families that get my babies will keep them fur-ever.  Re-homing MUST be confusing and upsetting for any dog and I try to avoid it if at all possible. I rarely get my puppies back (4 in 20 years). <em>Please contact us only if you can provide a happy poodle home for LIFE!</em>
           </p>
@@ -113,7 +113,7 @@ function About() {
           <img src={ sandbarBallImg } alt="poodles playing on the sandbar in the lake with a ball" /> 
         </div>
         <div>
-          <h3 className="app-h2">We guarantee our puppies health and for their sake, we also have limitations</h3>
+          <h2 className="app-h2">We guarantee our puppies health and for their sake, we also have limitations</h2>
           <p>
             Our puppies are sold with spay/neuter agreements. <em>No exceptions</em>. I have seen too many dogs DISCARDED by breeders and passed around like hot potatoes! That is not what I want for my babies. I OWE it to my pets to find their babies loving homes no matter how long that takes. Since this is my 8th generation of poodles I know we are free of illness (I have 24 generations of pedigree). I do not guarantee color (no one does or can). But I guarantee they are healthy! Our puppies LOVE people and have calm, wonderful temperaments. They adapt easily to their new home, children, and other pets.
           </p>
@@ -122,7 +122,7 @@ function About() {
 
       <article className="app-content-with-media">
         <div>
-          <h3 className="app-h2">How we feel about champions and dog shows</h3>
+          <h2 className="app-h2">How we feel about champions and dog shows</h2>
           <p>
             Breeders that show their dogs consider ALL other dogs sub-standard (no pun intended), especially parti colors. Our poodles definitely are NOT! They are still 100% poodle! I do NOT show my dogs as I get enough politics as it is! Many show dogs spend their lives in a crate. Again, not what I want for my babies. My focus is a wonderful pet that adds years of smiles and love to your life. Visit our <a href="https://www.facebook.com/Pampered-Poodles-4u-10-Standard-Poodles-and-their-babies-125192348492/" target="_blank" rel="noopener noreferrer">FaceBook</a> page to chat with the many people that have welcomed our babies into their homes. They say it much better than I can!
           </p>

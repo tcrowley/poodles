@@ -78,7 +78,7 @@ function Home() {
         </div>
       </div>
 
-      <h1 className="app-h1">Standard Poodles in Mid-Michigan</h1>
+      <h1 className="app-h1">Mid-Michigan Standard Poodles</h1>
       <p className="app-lead-paragraph">Loving, smart, beautiful, and calm. We have your new best friend!</p>
 
       { haveAvailablePuppies && 

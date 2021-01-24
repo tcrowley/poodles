@@ -14,7 +14,7 @@
 html {
   box-sizing: border-box;
   font-size: 100%;
-  font-size: clamp(100% , 2vw, 125%);
+  font-size: clamp(100%, 2vw, 125%);
   line-height: 1.5;
   color: var(--base-color);
 }
@@ -44,6 +44,15 @@ article + article {
   margin-top: calc(var(--default-margin) * 3);
 }
 
+details {
+  padding-left: 1em;
+}
+
+summary {
+  margin-left: -1em;
+  cursor: pointer;
+}
+
 a {
   color: var(--primary-darker);
   text-decoration: none;
@@ -63,35 +72,50 @@ img {
   vertical-align: middle;
 }
 
-h1, h2, h3, h4, h5, h6, p {
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  margin-bottom: calc(var(--default-margin)/2);
+  line-height: normal;
+  font-weight: 400;
+}
+
+p {
   margin: 0;
   margin-bottom: var(--default-margin);
-  line-height: normal;
-  font-weight: inherit;
 }
 
 .app-h1 {
   font-family: var(--accent-font);
-  font-size: 3.5em;
-  font-weight: 400;
+  font-size: 3.2em;
 }
 
 .app-h2 {
   font-size: 1.602em;
+  font-weight: 300;
   color: var(--primary-darker);
 }
 
 .app-h3 {
   font-size: 1.424em;
-  font-weight: 400;
+}
+
+.app-h4 {
+  font-size: 1.266em;
+}
+
+.app-h5 {
+  font-size: 1.125em;
+}
+
+.app-h6 {
+  font-size: 1em;
 }
 
 .app-lead-paragraph {
   font-size: 1.266em;
   color: var(--primary-darker);
-  margin-top: -1rem;
+  margin-top: calc(var(--default-margin) * -0.5);
 }
-
 
 [id="root"] {
   display: grid;
@@ -103,3 +127,10 @@ main {
   padding: var(--default-margin);
   overflow: auto;
 }
+
+summary .app-h2 {
+  display: inline-block;
+  margin-bottom: calc(var(--default-margin) * 0.5);
+  vertical-align: -0.1em;
+}
+

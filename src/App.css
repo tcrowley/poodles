@@ -5,14 +5,14 @@
   background-position: 0 0, 1em 1em;
   background-size: 2em 2em;
   font-family: var(--accent-font);
-  font-size: clamp(1rem , 2vw, 1.9rem);
+  font-size: clamp(1rem, 2vw, 1.9rem);
 }
 
 .app-header-wrapper {
   position: relative;
   display: flex;
   align-items: center;
-  padding: 0.5em 0.5em 0.5em 0.2em;
+  padding: 0.3em;
 }
 
 .app-header a {
@@ -36,7 +36,7 @@
   padding: 0.5em;
   background-color: var(--primary);
   border: 3px dotted;
-  box-shadow: 0 0 0 4px var(--primary);
+  box-shadow: 2px 0 0 4px var(--primary);
   font-size: 1.2em;
   font-weight: 700;
   cursor: pointer;
@@ -48,8 +48,20 @@
 .app-header .app-main-nav a:hover,
 .app-header .app-main-nav a:active {
   background-color: var(--primary-dark);
-  box-shadow: 0 0 0 4px var(--primary-dark);
+  box-shadow: 2px 0 0 4px var(--primary-dark);
   text-decoration: none;
+}
+
+.app-header .menu-action {
+  margin-left: auto;
+  padding: 0.35em 0.5em;
+  font-size: 1.25em;
+  box-shadow: 0 0 0 4px var(--primary);
+}
+
+.app-header .menu-action:focus,
+.app-header .menu-action:hover {
+  box-shadow: 0 0 0 4px var(--primary-dark);
 }
 
 .app-header .close-menu-action {
@@ -102,18 +114,18 @@
   display: inline-block;  
   border-radius: 50%;
   border: 4px dotted var(--primary-darker);
-  box-shadow: 0 0 0 6px var(--off-white);
+  box-shadow: 2px 0 0 4px var(--off-white);
   margin-right: 0.3em;
   padding: 0.2em 0.5em 0 0.25em;
   background-color: var(--off-white);
   font-size: 2em;
-  line-height: 1;
+  line-height: 0.8;
 }
 
 .app-header .logo small {
   display: block;
   font-size: 0.7em;
-  margin-top: -0.3em;
+  line-height: 0.6;
 }
 
 .app-header .logo:hover,
@@ -122,20 +134,14 @@
   text-decoration: none;
 }
 
-.app-header .menu-action {
-  margin-left: auto;
-  padding: 0.35em 0.5em;
-  font-size: 1.25em;
-}
-
 .app-header .poodle-icon {
   display: none;
   position: absolute;
   z-index: 1;
   top: clamp(-1.5em, -3vw, -1em);
   right: clamp(-0.6em, -1.4vw, -0.5em);
-  width: clamp(1em, 20vw, 9em);
-  height: clamp(1em, 18vw, 8em);
+  width: clamp(1em, 19vw, 8em);
+  height: clamp(1em, 17vw, 7.25em);
 }
 
 .app-sub-nav {
@@ -228,6 +234,20 @@
   .app-header .menu-action {
     display: none;
   }
+}
+
+.app-gallery {
+  display: flex;
+  align-items: center;
+  margin: calc(var(--default-margin)/2 * -1) calc(var(--default-margin)/2 * -1) var(--default-margin);
+  flex-wrap: wrap;
+}
+
+.app-gallery > * {
+  flex: 0 0 auto;
+  margin: calc(var(--default-margin)/2);
+  max-height: 30vh;
+  max-width: calc(100% - (var(--default-margin) * 2));
 }
 
 .app-content-with-media {
@@ -344,7 +364,7 @@
   .app-carousel {
     float: right;
     height: 65vh;
-    width: 55%;
+    width: 50%;
     margin-left: var(--default-margin);
     margin-right: var(--default-margin);
   }
@@ -369,4 +389,13 @@
 
 .app-quote blockquote {
   margin: 0;
+}
+
+.app-faq p,
+.app-faq ul {
+  max-width: 48em;
+}
+
+.paypal-form {
+  text-align: center;
 }
