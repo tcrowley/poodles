@@ -53,6 +53,10 @@ summary {
   cursor: pointer;
 }
 
+hr {
+  margin: var(--default-margin) calc(var(--default-margin) * 2);
+}
+
 a {
   color: var(--primary-darker);
   text-decoration: none;

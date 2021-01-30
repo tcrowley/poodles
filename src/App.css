@@ -396,6 +396,11 @@
   max-width: 48em;
 }
 
-.paypal-form {
-  text-align: center;
+.app-treats p,
+.app-treats ul {
+  max-width: 40em;
+}
+
+.app-treats article {
+  margin-left: calc(var(--default-margin) * 2);
 }
