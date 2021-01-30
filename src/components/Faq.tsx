@@ -326,28 +326,6 @@ function Faq() {
             <img src={ portrait2Img } alt="standard poodle portrait" /> 
         </div>
       </details>
-
-      <details>
-        <summary><h2 className="app-h2">PayPal</h2></summary>
-        <p>
-          I accept PayPal payments for deposits/purchase <strong>only if I have already spoken to you and agreed to
-          your purchase of one of our puppies</strong>. Cost includes the PayPal processing fee.
-        </p>
-        <div>
-          <form action="https://www.paypal.com/cgi-bin/webscr" method="post" className="paypal-form">
-            <input type="hidden" name="cmd" value="_s-xclick" />
-            <input type="hidden" name="hosted_button_id" value="8E6M5Y5XK8A44" />
-            <input type="hidden" name="on0" value="Poopdle Puppy" />
-            <select name="os0">
-              <option value="Puppy with shipping">Puppy paid in full with shipping ($1,983.00)</option>
-              <option value="Puppy paid in full">Puppy paid in full ($1,545.00)</option>
-              <option value="Deposit">Deposit ($412.00)</option>
-            </select><br /><br />
-            <input type="hidden" name="currency_code" value="USD" />
-            <input type="image" src="https://www.paypal.com/en_US/i/btn/btn_buynowCC_LG.gif" name="submit" alt="PayPal - The safer, easier way to pay online!" />
-          </form>
-        </div>
-      </details>
     </div>
   );
 }
