@@ -117,12 +117,12 @@ function Faq() {
         </p>
         
         <p>
-          Many people ask me what grooming supplies I use. The following items are available at <a href="http://www.petedge.com" target="_blank" rel="noopener noreferrer">www.petedge.com</a>. Where possible, I've included the item number.<br /> 
+          Many people ask me what grooming supplies I use. The following items are generally available on Amazon. Where possible, I've included a link.<br /> 
         </p>
                 
         <h3 className="app-h6">Clippers</h3>
         <p>
-          Oster Golden A5 2 speed (#OS28310) Comes with a #10 blade.
+          Oster A6 Cool Comfort Heavy Duty Clipper with Detachable Blade #10 (<a href="https://www.amazon.com/dp/B00ADWJSVC" target="_blank" rel="noopener noreferrer">Amazon</a>)
         </p>
 
         <h3 className="app-h6">Blades</h3>
@@ -132,31 +132,32 @@ function Faq() {
 
         <h3 className="app-h6">Brushes and Combs</h3>
         <p>
-          Master Grooming Tools Ergonomic Slicker Brushes (#TP353) and Master Grooming Tools Ergonomic Pet Grooming Combs (#TP407)
+          Chris Christensen Baby G Coral Slicker Brush (<a href="https://www.amazon.com/dp/B07HMG64R2" target="_blank" rel="noopener noreferrer">Amazon</a>)<br /> 
+          Chris Christensen 7 1/2" Fine/Coarse Buttercomb (<a href="https://www.amazon.com/dp/B0155XV2K8" target="_blank" rel="noopener noreferrer">Amazon</a>)
         </p>
 
         <h3 className="app-h6">Shears</h3>
         <p>
-          Master Grooming Tools 5900 Stainless Steel Series Straight Shears (#TP5242)
+          Kenchii Five Star 5.5" Straight Pro Dog Grooming Shear (<a href="https://www.amazon.com/dp/B0025YU1FI" target="_blank" rel="noopener noreferrer">Amazon</a>)
         </p>
 
         <h3 className="app-h6">Shampoo</h3>
         <p>
-          I use human shampoo with a cream rinse (Poodle hair is most like human hair). In August I use Dawn dish soap as a flea shampoo, seems to be the only time we have a problem.
+          I use human shampoo with a cream rinse (Poodle hair is most like human hair). In August, I use Dawn dish soap as a flea shampoo, seems to be the only time we have a problem.
         </p>
 
         <h3 className="app-h6">Ear Hair Pullers and Ear Wash</h3>
         <p>
-          Sadly, ear hair pullers are a necessary Tool. Curved Kelly Hemostat 5 1/2" (#TA175) <br />
-          If you'd like to buy an ear wash, try Veterinarian's Best Pet Ear Relief Wash (#VT200) but I recommend checking out our "Home Remedies" section for an amazing ear cleaner you can make at home.
+          Sadly, ear hair pullers are a necessary tool. I use a 5 1/2" curved hemostat (<a href="https://www.amazon.com/dp/B002C5O6D8" target="_blank" rel="noopener noreferrer">Amazon</a>) <br />
+          If you'd like to buy an ear wash, try Vet Organics EcoEars Dog Ear Cleaner (<a href="https://www.amazon.com/dp/B008QYVL1Y" target="_blank" rel="noopener noreferrer">Amazon</a>) but I recommend checking out our "Home Remedies" section for an amazing ear cleaner you can make at home.
         </p>
 
         <h3 className="app-h6">Nails</h3>
         <p>
-          I usually I use my Dremel, but you can use a nail clipper, I suggest the kind with the guard that doesn't let you cut too far, availabe at pet stores. Don't forget Styptic Powder (#TP91205)!
+          I usually I use my Dremel, but you can use a nail clipper, I suggest the kind with the guard that doesn't let you cut too far, available at pet stores. Don't forget Styptic Powder!
         </p>
 
-        <p><em>(this list was last updated 1/28/2010)</em></p>
+        <p><em>(this list was last updated January 2021)</em></p>
       </details>
 
 
