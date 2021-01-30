@@ -49,7 +49,6 @@ function About() {
             We are not a kennel or a FACILITY! We are a home with pets that have puppies. Our adult poodles are with us at all times. NO ONE IS CAGED (unless someone is in season) or in kennels outside (we don't have any). In the event we do leave them, they stay home and guard the house. The pontoon NEVER leaves the dock without them and we swim a few times a week.
           </p>
         </div>
-        
       </article>
 
       <article className="app-content-with-media">
