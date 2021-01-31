@@ -20,7 +20,7 @@ function About() {
       
       <h1 className="app-h1">About Us</h1>
       <p className="about-us-intro">
-        We are a family of standard poodle enthusiasts in mid-Michigan. We proudly brag about our <strong>eight</strong> generations of wonderful poodles, many of which have lived to 15 years old. Follow us on <a href="https://www.facebook.com/Pampered-Poodles-4u-10-Standard-Poodles-and-their-babies-125192348492/" target="_blank" rel="noopener noreferrer">FaceBook</a>!
+        We are a family of standard poodle enthusiasts in mid-Michigan. We proudly brag about our <strong>eight</strong> generations of wonderful poodles, many of which have lived to 15 years old. Follow us on <a href="https://www.facebook.com/125192348492/" target="_blank" rel="noopener noreferrer">FaceBook</a>!
       </p>
 
       <article className="app-content-with-media">
@@ -123,7 +123,7 @@ function About() {
         <div>
           <h2 className="app-h2">How we feel about champions and dog shows</h2>
           <p>
-            Breeders that show their dogs consider ALL other dogs sub-standard (no pun intended), especially parti colors. Our poodles definitely are NOT! They are still 100% poodle! I do NOT show my dogs as I get enough politics as it is! Many show dogs spend their lives in a crate. Again, not what I want for my babies. My focus is a wonderful pet that adds years of smiles and love to your life. Visit our <a href="https://www.facebook.com/Pampered-Poodles-4u-10-Standard-Poodles-and-their-babies-125192348492/" target="_blank" rel="noopener noreferrer">FaceBook</a> page to chat with the many people that have welcomed our babies into their homes. They say it much better than I can!
+            Breeders that show their dogs consider ALL other dogs sub-standard (no pun intended), especially parti colors. Our poodles definitely are NOT! They are still 100% poodle! I do NOT show my dogs as I get enough politics as it is! Many show dogs spend their lives in a crate. Again, not what I want for my babies. My focus is a wonderful pet that adds years of smiles and love to your life. Visit our <a href="https://www.facebook.com/125192348492/" target="_blank" rel="noopener noreferrer">FaceBook</a> page to chat with the many people that have welcomed our babies into their homes. They say it much better than I can!
           </p>
         </div>
         <div className="media-container">

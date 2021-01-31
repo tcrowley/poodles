@@ -17,7 +17,7 @@ function Footer() {
             <span className="footer-nav-icon"><FontAwesomeIcon icon={faPhoneAlt} /></span>
             <span className="footer-nav-description">(231) 972-7592</span>
           </a>
-          <a href="https://www.facebook.com/Pampered-Poodles-4u-10-Standard-Poodles-and-their-babies-125192348492/" target="_blank" rel="noopener noreferrer" aria-label="Follow us on Facebook">
+          <a href="https://www.facebook.com/125192348492/" target="_blank" rel="noopener noreferrer" aria-label="Follow us on Facebook">
             <span className="footer-nav-icon"><FontAwesomeIcon icon={faFacebookF} /></span>
             <span className="footer-nav-description">Follow Us</span>
           </a>

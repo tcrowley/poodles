@@ -238,17 +238,21 @@
 }
 
 .app-gallery {
-  display: flex;
-  align-items: center;
-  margin: calc(var(--default-margin)/2 * -1) calc(var(--default-margin)/2 * -1) var(--default-margin);
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(18em, 1fr));
+  grid-template-rows: 30vh;
+  grid-gap: var(--default-margin);
+  margin-bottom: var(--default-margin);
 }
 
 .app-gallery > * {
-  flex: 0 0 auto;
-  margin: calc(var(--default-margin)/2);
-  max-height: 30vh;
-  max-width: calc(100% - (var(--default-margin) * 2));
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.app-gallery.cover > * {
+  object-fit: cover;
 }
 
 .app-content-with-media {

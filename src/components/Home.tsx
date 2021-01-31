@@ -96,7 +96,7 @@ function Home() {
       </p>
 
       <p>
-        Looking for news and updates? Want to join in the birthday celebrations? Get pupdates from the pups in their new homes? Follow us on <a href="https://www.facebook.com/Pampered-Poodles-4u-10-Standard-Poodles-and-their-babies-125192348492/" target="_blank" rel="noopener noreferrer">FaceBook</a>.
+        Looking for news and updates? Want to join in the birthday celebrations? Get pupdates from the pups in their new homes? Follow us on <a href="https://www.facebook.com/125192348492/" target="_blank" rel="noopener noreferrer">FaceBook</a>.
       </p>
     </div>
   );

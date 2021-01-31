@@ -43,9 +43,9 @@ function Faq() {
           We love them. We think they're fantastic. What gorgeous, unique dogs! No, these colors do not meet AKC's standards for conformation shows. Yes, they are still pure-bred registered dogs. In fact, the breed was originally multi-colored. No they are NOT inferior in any way! We appreciate when those that feel they are keep their opinions to themselves. We think these people are ridiculous.
         </p>
 
-        <div className="app-gallery">
+        <p>
           <img src={originalPooImg} alt="old paintings of multi-colored poodles" />
-        </div>
+        </p>
       </details>
 
       <details>

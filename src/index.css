@@ -88,6 +88,10 @@ p {
   margin-bottom: var(--default-margin);
 }
 
+address {
+  margin-bottom: var(--default-margin);
+}
+
 .app-h1 {
   font-family: var(--accent-font);
   font-size: 3.25em;
