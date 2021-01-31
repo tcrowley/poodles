@@ -6,7 +6,7 @@ import play2Img from '../images/reunions/petparkplay2.jpg';
 import play3Img from '../images/reunions/petparkplay3.jpg';
 
 function Reunions() {
-  
+
   React.useEffect(() => {
     document.title = "Pampered Poodles 4 U - Reunions"
   });
@@ -14,12 +14,14 @@ function Reunions() {
   return (
     <>
       <AboutSubNav />
-     
+
       <h1 className="app-h1">Pet Park Reunions</h1>
       <p className="app-lead-paragraph">Where our poodles go to play!</p>
 
       <p>
-        We host poodle reunions at our private Pet Park twice a year, on the Saturday before Memorial Day and the Saturday after Labor Day. <br />
+        We host poodle reunions at our private Pet Park twice a year, on the Saturday before Memorial Day and the Saturday after Labor Day.
+      </p>
+      <p>
         Check out our <a href="https://www.facebook.com/125192348492/photos/?tab=album" target="_blank" rel="noopener noreferrer">FaceBook Albums</a> for pictures of past events.
       </p>
 
