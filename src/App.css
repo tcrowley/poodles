@@ -5,7 +5,7 @@
   background-position: 0 0, 1em 1em;
   background-size: 2em 2em;
   font-family: var(--accent-font);
-  font-size: clamp(1rem, 2vw, 1.9rem);
+  font-size: clamp(1rem, 2vw, 1.8rem);
 }
 
 .app-header-wrapper {
@@ -150,12 +150,13 @@
   flex-wrap: wrap;
   margin: calc(var(--default-margin) * -1);
   margin-bottom: var(--default-margin);
-  padding: 0.25rem 5vw;
+  padding: 0.15rem 1vw;
   background-color: var(--grey);
+  font-size: 1.2em;
 }
 
 .app-sub-nav a {
-  padding: 0 0.5em;
+  padding: 0 0.35em;
   color: inherit;
   white-space: nowrap;
 }
@@ -213,7 +214,7 @@
   display: none;
 }
 
-@media only screen and (min-width: 850px) {
+@media only screen and (min-width: 750px) {
   .app-header-wrapper {
     padding-right: clamp(1em, 15.6vw, 7em);
   }
@@ -394,11 +395,6 @@
 .app-faq p,
 .app-faq ul {
   max-width: 48em;
-}
-
-.app-treats p,
-.app-treats ul {
-  max-width: 40em;
 }
 
 .app-treats article {

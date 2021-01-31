@@ -2,6 +2,11 @@ import React from 'react';
 import AboutSubNav from "./AboutSubNav";
 import treats1Img from '../images/treats/treats1.jpg';
 import treats2Img from '../images/treats/treats2.jpg';
+import treats3Img from '../images/treats/treats3.jpg';
+import treats4Img from '../images/treats/treats4.jpg';
+import puppyTreat1Img from '../images/treats/puppytreat1.jpg';
+import puppyTreat2Img from '../images/treats/puppytreat2.jpg';
+import puppiesTreatsImg from '../images/treats/puppiestreats.jpg';
 import izzietreat1Img from '../images/treats/izzietreat.jpg';
 import izzietreat2Img from '../images/treats/izzietreat2.jpg';
 
@@ -38,7 +43,7 @@ function Treats() {
           </p>
         </div>
         <div className="media-container">
-          <img src={treats2Img} alt="poodles waiting patiently for treats" />
+          <img src={treats3Img} alt="poodles waiting excitedly for treats" />
         </div>
       </article>
 
@@ -61,7 +66,7 @@ function Treats() {
           </p>
         </div>
         <div className="media-container">
-          <img src={treats1Img} alt="poodles waiting patiently for treats" />
+          <img src={puppyTreat2Img} alt="poodles waiting patiently for treats" />
         </div>
       </article>
 
@@ -84,7 +89,7 @@ function Treats() {
           </p>
         </div>
         <div className="media-container">
-          <img src={izzietreat1Img} alt="more poodles waiting patiently for treats" />
+          <img src={treats1Img} alt="more poodles waiting patiently for treats" />
         </div>
       </article>
 
@@ -95,21 +100,18 @@ function Treats() {
           <h2 className="app-h2">Tuna Treats</h2>
           <h3 className="app-h5">Ingredients:</h3>
           <ul>
-            <li>1 cup yellow cornmeal</li>
-            <li>1 cup oatmeal</li>
-            <li>2 eggs</li>
-            <li>1/4 tsp. baking powder</li>
-            <li>1/2 tsp. garlic powder</li>
-            <li>1 can tuna in oil, undrained</li>
-            <li>1/3 cup water</li>
+            <li>1 small can of tuna</li>
+            <li>1 cup pumpkin or apple sauce</li>
+            <li>1 cup flour</li>
+            <li>1 tsp. ginger (optional)</li>
           </ul>
           <h3 className="app-h6">Instructions:</h3>
           <p>
-            Mix with hands, roll out on floured surface, cut into tasty shapes, and bake 20 minutes at 350&#8457;.
+            Mix with hands, roll out on greased and floured cookie sheet, score with pizza cutter, and bake at 350&#8457; until dry and crunchy.
           </p>
         </div>
         <div className="media-container">
-          <img src={izzietreat2Img} alt="poodles waiting patiently for treats" />
+          <img src={puppyTreat1Img} alt="poodles waiting patiently for treats" />
         </div>
       </article>
 
@@ -159,7 +161,7 @@ function Treats() {
           </p>
         </div>
         <div className="media-container">
-          <img src={treats2Img} alt="poodles waiting patiently for treats" />
+          <img src={puppiesTreatsImg} alt="poodles waiting patiently for treats" />
         </div>
       </article>
 
@@ -184,7 +186,7 @@ function Treats() {
           </p>
         </div>
         <div className="media-container">
-          <img src={treats2Img} alt="poodles waiting patiently for treats" />
+          <img src={izzietreat1Img} alt="poodles waiting patiently for treats" />
         </div>
       </article>
 
@@ -209,7 +211,7 @@ function Treats() {
           </p>
         </div>
         <div className="media-container">
-          <img src={treats2Img} alt="poodles waiting patiently for treats" />
+          <img src={treats4Img} alt="poodles waiting patiently for treats" />
         </div>
       </article>
 
@@ -233,7 +235,7 @@ function Treats() {
           </p>
         </div>
         <div className="media-container">
-          <img src={treats2Img} alt="poodles waiting patiently for treats" />
+          <img src={izzietreat2Img} alt="poodles waiting patiently for treats" />
         </div>
       </article>
     </div>
