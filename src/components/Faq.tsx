@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import originalPooImg from '../images/faq/originalpoodles.jpg';
 import memoryOrbImg from '../images/faq/memoryorb.jpg';
 import memoryPendantImg from '../images/faq/memorypendant.jpg';
 import portrait1Img from '../images/faq/portrait1.jpg';
@@ -40,7 +41,11 @@ function Faq() {
         <h3 className="app-h4">Parti and Phantom Colors</h3>
         <p>
           We love them. We think they're fantastic. What gorgeous, unique dogs! No, these colors do not meet AKC's standards for conformation shows. Yes, they are still pure-bred registered dogs. In fact, the breed was originally multi-colored. No they are NOT inferior in any way! We appreciate when those that feel they are keep their opinions to themselves. We think these people are ridiculous.
-          </p>
+        </p>
+
+        <div className="app-gallery">
+          <img src={originalPooImg} alt="old paintings of multi-colored poodles" />
+        </div>
       </details>
 
       <details>
