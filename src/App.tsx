@@ -5,10 +5,12 @@ import Faq from './components/Faq';
 import Footer from './components/Footer';
 import Header from './components/Header';
 import Home from './components/Home';
-import Parents from './components/Parents';
+import Girls from './components/Girls';
 import Puppies from './components/Puppies';
 import Reunions from './components/Reunions';
 import Treats from './components/Treats';
+import Studs from './components/Studs';
+import Dog from './components/Dog';
 
 function App() {
   return (
@@ -32,8 +34,14 @@ function App() {
             <Route path="/faq">
               <Faq />
             </Route>
-            <Route path="/parents">
-              <Parents />
+            <Route path="/girls">
+              <Girls />
+            </Route>
+            <Route path="/studmuffins">
+              <Studs />
+            </Route>
+            <Route path="/dog/:id">
+              <Dog />
             </Route>
             <Route path="/puppies">
               <Puppies />

@@ -11,7 +11,7 @@ import AboutSubNav from './AboutSubNav';
 function Faq() {
 
   React.useEffect(() => {
-    document.title = 'Pampered Poodles 4 U - FAQ'
+    document.title = 'Pampered Poodles 4 U - FAQ';
   });
 
   return (
@@ -79,7 +79,7 @@ function Faq() {
         </p>
         
         <p>
-          Since I opened our home to <Link to="/adult/5">Jazz</Link> and <Link to="/adult/6">Checkers</Link> I have a completely different view of rescue. Those girls were wonderful! SO loving and devoted! They loved the car, the boat, the water. They did not want to be 12 inches from me. They would gaze at me with total adoration in their eyes, wagging their tail when I spoke to them. When they came here, they hardly wagged and did not play. 
+          Since I opened our home to <Link to="/dog/5">Jazz</Link> and <Link to="/dog/6">Checkers</Link> I have a completely different view of rescue. Those girls were wonderful! SO loving and devoted! They loved the car, the boat, the water. They did not want to be 12 inches from me. They would gaze at me with total adoration in their eyes, wagging their tail when I spoke to them. When they came here, they hardly wagged and did not play. 
         </p>
 
         <p>
@@ -264,7 +264,7 @@ function Faq() {
           Harlee, my granddaughter, pet sits!
         </p>
 
-        <div className="app-gallery">
+        <div className="app-gallery contain">
             <img src={ petSittingImg } alt="Safe Treasures personal care dog sitting, Harlee Dunlop (231) 250-6126" />
         </div>
 

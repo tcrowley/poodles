@@ -13,7 +13,7 @@ import izzietreat2Img from '../images/treats/izzietreat2.jpg';
 function Treats() {
 
   React.useEffect(() => {
-    document.title = "Pampered Poodles 4 U - Treat Recipes"
+    document.title = 'Pampered Poodles 4 U - Treat Recipes';
   });
 
   return (

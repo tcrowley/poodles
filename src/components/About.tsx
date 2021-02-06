@@ -11,7 +11,7 @@ import sandbarBallImg from '../images/sandbarball.jpg';
 function About() {
 
   React.useEffect(() => {
-    document.title = "Pampered Poodles 4 U - About Us"
+    document.title = 'Pampered Poodles 4 U - About Us';
   });
 
   return (

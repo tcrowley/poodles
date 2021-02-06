@@ -8,7 +8,7 @@ import play3Img from '../images/reunions/petparkplay3.jpg';
 function Reunions() {
 
   React.useEffect(() => {
-    document.title = "Pampered Poodles 4 U - Reunions"
+    document.title = 'Pampered Poodles 4 U - Reunions';
   });
 
   return (
@@ -29,7 +29,7 @@ function Reunions() {
         <a href="https://goo.gl/maps/q62tE1jo6Fe8gyJB8" target="_blank" rel="noopener noreferrer">13746 60th Ave, <br />Remus, MI 49340</a>
       </address>
 
-      <div className="app-gallery cover">
+      <div className="app-gallery">
         <img src={aerialImg} alt="aerial view of the pet park" />
         <img src={play1Img} alt="poodles playing at the pet park" />
         <img src={play2Img} alt="poodles playing at the pet park" />

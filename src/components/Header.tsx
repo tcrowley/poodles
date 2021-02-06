@@ -20,7 +20,7 @@ function Header() {
 
         <nav aria-label="Main" className="app-main-nav">
             <Link to="/puppies">See the Puppies</Link>
-            <Link to="/parents">Meet the Parents</Link>
+            <Link to="/girls">Meet the Parents</Link>
             <Link to="/about">Get to Know Us</Link>
         </nav>
         <img src={ poodle } alt="" className="poodle-icon" />
