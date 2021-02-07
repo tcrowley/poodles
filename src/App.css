@@ -258,10 +258,43 @@
   margin-bottom: var(--default-margin);
 }
 
+.app-gallery > *,
+.app-gallery > button {
+  background: var(--off-white);
+  box-shadow: 0 0 5px 2px #bbb;
+  outline: none;
+  transition: all .2s ease-in-out;
+}
+
+.app-gallery > *:focus,
+.app-gallery > a:hover,
+.app-gallery > button:hover {
+  box-shadow: 0 0 5px 3px #aaa;
+  transform: scale(1.005);
+}
+
+.app-gallery a {
+  font-size: 1.125em;
+  font-weight: 400;
+}
+
+.app-gallery figure,
 .app-gallery img {
   width: 100%;
   height: 100%;
+  margin: 0;
+}
+
+.app-gallery img {
   object-fit: cover;
+}
+
+.app-gallery figcaption {
+  max-width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  padding: 0.25em;
 }
 
 .app-gallery.contain {
@@ -274,11 +307,19 @@
 
 .app-gallery.captioned {
   grid-auto-rows: minmax(24em, 30vh);
-  text-align: center;
 }
 
-.app-gallery.captioned img {
-  height: calc(100% - 1.5em);
+.app-gallery figure img {
+  height: calc(100% - 2em);
+}
+
+.app-gallery .button-link {
+  color: inherit;
+}
+
+.app-gallery .button-link:hover,
+.app-gallery .button-link:focus {
+  text-decoration: none;
 }
 
 .app-content-with-media {
@@ -310,6 +351,7 @@
   object-fit: cover;
   max-height: 50vh;
   max-width: 100%;
+  box-shadow: 0 0 5px 2px #aaa;
 }
 
 @media only screen and (min-width: 1974px) { 

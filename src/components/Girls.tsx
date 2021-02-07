@@ -35,8 +35,10 @@ function Girls() {
         <div className="app-gallery captioned">
           { activeDogs.map((dog, index) => ( 
             <Link key={index} to={`/dog/${dog.id}`}>
-              <img src={`https://pamperedpoodles4u.net//PHP/util/view.php?id=${dog.mainPictureId}`} alt="" />
-              <strong>{ dog.nickName }</strong>
+              <figure>
+                <img src={`https://pamperedpoodles4u.net//PHP/util/view.php?id=${dog.mainPictureId}`} alt="" />
+                <figcaption>{ dog.nickName }</figcaption>
+              </figure>
             </Link>
           ))}
         </div>
@@ -47,20 +49,24 @@ function Girls() {
         <div className="app-gallery captioned">
           { retiredDogs.map((dog, index) => ( 
             <Link key={index} to={`/dog/${dog.id}`}>
-              <img src={`https://pamperedpoodles4u.net//PHP/util/view.php?id=${dog.mainPictureId}`} alt="" />
-              <strong>{ dog.nickName }</strong>
+              <figure>
+                <img src={`https://pamperedpoodles4u.net//PHP/util/view.php?id=${dog.mainPictureId}`} alt="" />
+                <figcaption>{ dog.nickName }</figcaption>
+              </figure>
             </Link>
           ))}
         </div>
 
         <h2 className="app-h1">In Loving Memory</h2>
-        <p>We miss these beloved girls every day.</p>
+        <p className="app-lead-paragraph">We'll see them again at the rainbow bridge.</p>
 
         <div className="app-gallery captioned">
           { passedDogs.map((dog, index) => ( 
             <Link key={index} to={`/dog/${dog.id}`}>
-              <img src={`https://pamperedpoodles4u.net//PHP/util/view.php?id=${dog.mainPictureId}`} alt="" />
-              <strong>{ dog.nickName }</strong>
+              <figure>
+                <img src={`https://pamperedpoodles4u.net//PHP/util/view.php?id=${dog.mainPictureId}`} alt="" />
+                <figcaption>{ dog.nickName }</figcaption>
+              </figure>
             </Link>
           ))}
         </div>
