@@ -11,11 +11,14 @@ import Reunions from './components/Reunions';
 import Treats from './components/Treats';
 import Studs from './components/Studs';
 import Dog from './components/Dog';
+import Wait from './components/Wait';
 
 function App() {
   return (
     <Router>
       <Header />
+
+      <Wait />
 
       <main className="app-content">
           <Switch>

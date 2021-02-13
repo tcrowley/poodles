@@ -1,12 +1,12 @@
 import React from 'react';
 import AboutSubNav from "./AboutSubNav";
-import loungingImg from '../images/lounging.jpg';
-import beemerPontoonImg from '../images/beemerpontoon.jpg';
-import puppyDoorImg from '../images/puppydoor.jpg';
-import puppyWavingImg from '../images/puppywaving.jpg';
-import puppyKissesImg from '../images/puppykisses.jpg';
-import sandbarImg from '../images/sandbar.jpg';
-import sandbarBallImg from '../images/sandbarball.jpg';
+import loungingImg from '../images/about/lounging.jpg';
+import beemerPontoonImg from '../images/about/beemerpontoon.jpg';
+import puppyDoorImg from '../images/about/puppydoor.jpg';
+import puppyWavingImg from '../images/about/puppywaving.jpg';
+import puppyKissesImg from '../images/about/puppykisses.jpg';
+import sandbarImg from '../images/about/sandbar.jpg';
+import sandbarBallImg from '../images/about/sandbarball.jpg';
 
 function About() {
 

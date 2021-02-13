@@ -10,15 +10,15 @@ function Footer() {
 
         <nav className="footer-nav" aria-label="Footer">
           <a href="mailto:bjdpamperedpets@yahoo.com">
-              <span className="footer-nav-icon"><FontAwesomeIcon icon={faEnvelope} /></span>
+              <span className="app-action-icon"><FontAwesomeIcon icon={faEnvelope} /></span>
               <span className="footer-nav-description">bjdpamperedpets@yahoo.com</span>
           </a>
           <a href="tel:231-972-7592">
-            <span className="footer-nav-icon"><FontAwesomeIcon icon={faPhoneAlt} /></span>
+            <span className="app-action-icon"><FontAwesomeIcon icon={faPhoneAlt} /></span>
             <span className="footer-nav-description">(231) 972-7592</span>
           </a>
           <a href="https://www.facebook.com/125192348492/" target="_blank" rel="noopener noreferrer" aria-label="Follow us on Facebook">
-            <span className="footer-nav-icon"><FontAwesomeIcon icon={faFacebookF} /></span>
+            <span className="app-action-icon"><FontAwesomeIcon icon={faFacebookF} /></span>
             <span className="footer-nav-description">Follow Us</span>
           </a>
         </nav>
