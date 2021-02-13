@@ -346,7 +346,8 @@
   background: rgba(0, 0, 0, .7);
 }
 
-.app-gallery-full-image figure {
+.app-gallery-full-image figure, 
+.app-gallery-full-image img {
   height: auto;
   width: auto;
   max-height: 90vh;
