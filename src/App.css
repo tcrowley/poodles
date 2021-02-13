@@ -347,7 +347,7 @@
 }
 
 .app-gallery-full-image figure, 
-.app-gallery-full-image img {
+.app-gallery-full-image figure img {
   height: auto;
   width: auto;
   max-height: 90vh;
