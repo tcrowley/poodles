@@ -34,7 +34,7 @@ function Header() {
              Close Menu <FontAwesomeIcon icon={faTimes} size="2x" />
             </button>
             <Link to="/puppies">See the Puppies</Link>
-            <Link to="/parents">Meet the Parents</Link>
+            <Link to="/girls">Meet the Parents</Link>
             <Link to="/about">Get to Know Us</Link>
           </nav>
         }
