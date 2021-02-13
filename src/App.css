@@ -314,7 +314,7 @@
   grid-auto-rows: minmax(24em, 30vh);
 }
 
-.app-galler.show-placeholder {
+.app-gallery.show-placeholder figure {
   background: var(--off-white) url('images/imageplaceholder.png') no-repeat center 1em;
   background-size: contain;
 }
