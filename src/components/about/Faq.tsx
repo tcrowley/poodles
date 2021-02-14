@@ -1,11 +1,11 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import originalPooImg from '../images/faq/originalpoodles.jpg';
-import memoryOrbImg from '../images/faq/memoryorb.jpg';
-import memoryPendantImg from '../images/faq/memorypendant.jpg';
-import portrait1Img from '../images/faq/portrait1.jpg';
-import portrait2Img from '../images/faq/portrait2.jpg';
-import petSittingImg from '../images/faq/harleepetsitting.jpg';
+import originalPooImg from 'images/faq/originalpoodles.jpg';
+import memoryOrbImg from 'images/faq/memoryorb.jpg';
+import memoryPendantImg from 'images/faq/memorypendant.jpg';
+import portrait1Img from 'images/faq/portrait1.jpg';
+import portrait2Img from 'images/faq/portrait2.jpg';
+import petSittingImg from 'images/faq/harleepetsitting.jpg';
 import AboutSubNav from './AboutSubNav';
 
 function Faq() {

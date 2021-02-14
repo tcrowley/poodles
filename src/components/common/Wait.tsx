@@ -1,5 +1,5 @@
-import ballGif from '../images/pupBall.gif';
-import ballWebP from '../images/pupBall.webp';
+import ballGif from 'images/pupBall.gif';
+import ballWebP from 'images/pupBall.webp';
 
 function Wait({ waitText = 'Loading...', visible = false }) {
   return (

@@ -1,14 +1,14 @@
 import React from 'react';
-import AboutSubNav from "./AboutSubNav";
-import treats1Img from '../images/treats/treats1.jpg';
-import treats2Img from '../images/treats/treats2.jpg';
-import treats3Img from '../images/treats/treats3.jpg';
-import treats4Img from '../images/treats/treats4.jpg';
-import puppyTreat1Img from '../images/treats/puppytreat1.jpg';
-import puppyTreat2Img from '../images/treats/puppytreat2.jpg';
-import puppiesTreatsImg from '../images/treats/puppiestreats.jpg';
-import izzietreat1Img from '../images/treats/izzietreat.jpg';
-import izzietreat2Img from '../images/treats/izzietreat2.jpg';
+import AboutSubNav from './AboutSubNav';
+import treats1Img from 'images/treats/treats1.jpg';
+import treats2Img from 'images/treats/treats2.jpg';
+import treats3Img from 'images/treats/treats3.jpg';
+import treats4Img from 'images/treats/treats4.jpg';
+import puppyTreat1Img from 'images/treats/puppytreat1.jpg';
+import puppyTreat2Img from 'images/treats/puppytreat2.jpg';
+import puppiesTreatsImg from 'images/treats/puppiestreats.jpg';
+import izzietreat1Img from 'images/treats/izzietreat.jpg';
+import izzietreat2Img from 'images/treats/izzietreat2.jpg';
 
 function Treats() {
 

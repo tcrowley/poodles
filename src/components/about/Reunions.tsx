@@ -1,9 +1,9 @@
 import React from 'react';
-import AboutSubNav from "./AboutSubNav";
-import aerialImg from '../images/reunions/petparkaerial.jpg';
-import play1Img from '../images/reunions/petparkplay1.jpg';
-import play2Img from '../images/reunions/petparkplay2.jpg';
-import play3Img from '../images/reunions/petparkplay3.jpg';
+import AboutSubNav from './AboutSubNav';
+import aerialImg from 'images/reunions/petparkaerial.jpg';
+import play1Img from 'images/reunions/petparkplay1.jpg';
+import play2Img from 'images/reunions/petparkplay2.jpg';
+import play3Img from 'images/reunions/petparkplay3.jpg';
 
 function Reunions() {
 

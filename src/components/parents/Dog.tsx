@@ -1,13 +1,12 @@
 import React from 'react';
 import { Link, useParams } from 'react-router-dom';
-import { Adult } from '../models/adult.model';
-import { PictureInfo } from '../models/picture.model';
-import { Litter } from '../models/puppy.model';
-import adultsService from '../services/adults.service';
-import { calculateAge, formatDisplayDate } from '../services/date.util';
-import BackSubNav from './BackSubNav';
-import GalleryImage from './GalleryImage';
-import Wait from './Wait';
+import BackSubNav from 'components/common/BackSubNav';
+import Gallery from 'components/common/Gallery';
+import Wait from 'components/common/Wait';
+import adultsService from 'services/adults.service';
+import { calculateAge, formatDisplayDate } from 'services/date.util';
+import { Adult } from 'models/adult.model';
+import { Litter } from 'models/puppy.model';
 
 function Dog() {
   const { id } = useParams<{ id: string; }>();
@@ -78,11 +77,10 @@ function Dog() {
               </ul>
             </details>
           }
+
           <br />
 
-          <div className="app-gallery show-placeholder">
-            { dog?.pictures.map((pic: PictureInfo, index) => <GalleryImage pic={pic} key={index} /> ) }
-          </div>
+          <Gallery pictures={dog?.pictures} />
         </React.Fragment>
       }
     </>

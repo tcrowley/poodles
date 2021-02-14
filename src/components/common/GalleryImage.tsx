@@ -1,7 +1,7 @@
-import { faTimes } from '@fortawesome/free-solid-svg-icons';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React from 'react';
-import { PictureInfo } from '../models/picture.model';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faTimes } from '@fortawesome/free-solid-svg-icons';
+import { PictureInfo } from 'models/picture.model';
 
 function GalleryImage({ pic }: { pic: PictureInfo }) {
   const [showFull, setShowFull] = React.useState(false);
