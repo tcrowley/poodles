@@ -9,7 +9,7 @@ function Reunions() {
 
   React.useEffect(() => {
     document.title = 'Pampered Poodles 4 U - Reunions';
-  });
+  }, []);
 
   return (
     <>

@@ -40,7 +40,7 @@ function GalleryImage({ pic }: { pic: PictureInfo }) {
     <>
       <button type="button" className="button-link" onClick={() => showFullImage()}>
         <figure>
-          <img src={`https://pamperedpoodles4u.net//PHP/util/view.php?id=${pic.id}`} alt="" />
+          <img data-src={`https://pamperedpoodles4u.net//PHP/util/view.php?id=${pic.id}`} alt="" />
           <figcaption>{ pic.caption }</figcaption>
         </figure>
       </button>

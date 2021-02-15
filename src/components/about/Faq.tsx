@@ -12,7 +12,7 @@ function Faq() {
 
   React.useEffect(() => {
     document.title = 'Pampered Poodles 4 U - FAQ';
-  });
+  }, []);
 
   return (
     <div className="app-faq">

@@ -11,7 +11,7 @@ function Girls() {
   
   React.useEffect(() => {
     document.title = 'Pampered Poodles 4 U - Beautiful Girls';
-  });
+  }, []);
 
   React.useEffect(() => {
     adultsService.getAdults().then(res => {
@@ -33,8 +33,8 @@ function Girls() {
         <p className="app-lead-paragraph">Our fabulous, loving girls!</p>
 
         <div className="app-gallery captioned">
-          { activeDogs.map((dog, index) => ( 
-            <Link key={index} to={`/dog/${dog.id}`}>
+          { activeDogs.map((dog) => ( 
+            <Link key={dog.id} to={`/dog/${dog.id}`}>
               <figure>
                 <img src={`https://pamperedpoodles4u.net//PHP/util/view.php?id=${dog.mainPictureId}`} alt="" />
                 <figcaption>{ dog.nickName }</figcaption>
@@ -47,8 +47,8 @@ function Girls() {
         <p className="app-lead-paragraph">These girls' job is enjoying the pampered pet life.</p>
 
         <div className="app-gallery captioned">
-          { retiredDogs.map((dog, index) => ( 
-            <Link key={index} to={`/dog/${dog.id}`}>
+          { retiredDogs.map((dog) => ( 
+            <Link key={dog.id} to={`/dog/${dog.id}`}>
               <figure>
                 <img src={`https://pamperedpoodles4u.net//PHP/util/view.php?id=${dog.mainPictureId}`} alt="" />
                 <figcaption>{ dog.nickName }</figcaption>
@@ -61,8 +61,8 @@ function Girls() {
         <p className="app-lead-paragraph">We'll see them again at the rainbow bridge.</p>
 
         <div className="app-gallery captioned">
-          { passedDogs.map((dog, index) => ( 
-            <Link key={index} to={`/dog/${dog.id}`}>
+          { passedDogs.map((dog) => ( 
+            <Link key={dog.id} to={`/dog/${dog.id}`}>
               <figure>
                 <img src={`https://pamperedpoodles4u.net//PHP/util/view.php?id=${dog.mainPictureId}`} alt="" />
                 <figcaption>{ dog.nickName }</figcaption>

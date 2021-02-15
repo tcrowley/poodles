@@ -5,6 +5,7 @@ import Footer from 'components/Footer';
 import Wait from 'components/common/Wait';
 
 import Home from 'components/Home';
+import ErrorPage from 'components/ErrorPage';
 
 import About from 'components/about/About';
 import Faq from 'components/about/Faq';
@@ -54,6 +55,9 @@ function App() {
             </Route>
             <Route path="/puppies">
               <Puppies />
+            </Route>
+            <Route path="*">
+              <ErrorPage />
             </Route>
           </Switch>
       </main>

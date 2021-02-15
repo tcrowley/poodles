@@ -314,9 +314,9 @@
   grid-auto-rows: minmax(24em, 30vh);
 }
 
-.app-gallery.show-placeholder figure {
-  background: var(--off-white) url('images/imageplaceholder.png') no-repeat center 1em;
-  background-size: contain;
+.app-gallery.show-placeholder img {
+  background: var(--off-white) url('images/imageplaceholder.png') no-repeat center;
+  background-size: 60%;
 }
 
 .app-gallery figure img {

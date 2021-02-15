@@ -1,7 +1,7 @@
 
 function handleErrors(response) {
     if (!response.ok) {
-        throw Error(response.statusText);
+        return Promise.reject(response);
     }
     return response;
 }
@@ -10,8 +10,7 @@ const picturesService = {
     getCount() {
         return fetch('https://pamperedpoodles4u.net/PHP/api/pictureCount.php')
             .then(handleErrors)
-            .then(response => response.json())
-            .catch(error => console.log(error) );
+            .then(response => response.json());
     }
 }
 

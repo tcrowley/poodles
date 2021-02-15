@@ -3,7 +3,7 @@ function Puppies() {
 
   React.useEffect(() => {
     document.title = 'Pampered Poodles 4 U - Puppies';
-  });
+  }, []);
 
   return (
       <>

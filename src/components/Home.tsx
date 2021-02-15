@@ -1,6 +1,6 @@
 import { faCircle } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import React from 'react';
+import React, { useCallback } from 'react';
 import { Link } from 'react-router-dom';
 import christmasBlingImg from 'images/carousel/christmas_bling.jpg';
 import dawsonWithPuppyImg from 'images/carousel/dawsonwithpuppy.jpg';
@@ -18,44 +18,41 @@ import walkImg from 'images/carousel/walk.jpg';
 import picturesService from '../services/pictures.service';
 import puppiesService from '../services/puppies.service';
 
-function Home() {
-  const carouselList = [
-    { src: christmasBlingImg, alt: 'christmas bling', current: true }, 
-    { src: puppySwarmImg, alt: 'puppy swarm' }, 
-    { src: dawsonWithPuppyImg, alt: 'puppy laying on toddler' }, 
-    { src: harleeTackledImg, alt: 'puppy with momma' }, 
-    { src: onDeckImg, alt: 'poodles on deck' },
-    { src: nappingImg, alt: 'taking a nap' },
-    { src: pontoonImg, alt: 'pontoon ride' },
-    { src: swimmingBallImg, alt: 'diving in the lake for the ball' },
-    { src: waitingPrettyImg, alt: 'everyone waiting patiently' },
-    { src: walkImg, alt: 'going for a walk with Harlee' },
-    { src: goingForRideImg, alt: 'car ride' },
-    { src: snowDogImg, alt: 'snow dog' },
-    { src: lilyBedImg, alt: 'poodle in bed' }
-  ];
+const carouselList = [
+  { src: christmasBlingImg, alt: 'christmas bling', current: true }, 
+  { src: puppySwarmImg, alt: 'puppy swarm' }, 
+  { src: dawsonWithPuppyImg, alt: 'puppy laying on toddler' }, 
+  { src: harleeTackledImg, alt: 'puppy with momma' }, 
+  { src: onDeckImg, alt: 'poodles on deck' },
+  { src: nappingImg, alt: 'taking a nap' },
+  { src: pontoonImg, alt: 'pontoon ride' },
+  { src: swimmingBallImg, alt: 'diving in the lake for the ball' },
+  { src: waitingPrettyImg, alt: 'everyone waiting patiently' },
+  { src: walkImg, alt: 'going for a walk with Harlee' },
+  { src: goingForRideImg, alt: 'car ride' },
+  { src: snowDogImg, alt: 'snow dog' },
+  { src: lilyBedImg, alt: 'poodle in bed' }
+];
 
+function Home() {
   const [count, setCount] = React.useState('');
   const [haveAvailablePuppies, setHaveAvailablePuppies] = React.useState(false);
   const [carouselItems, setCarouselItems] = React.useState(carouselList);
 
-  const selectCarouselItem = (selectedIndex) => {
-    const list = carouselList.map((item, itemIndex) => {
-      item.current = false;
-      return item;
-    });
-
+  const selectCarouselItem = useCallback((selectedIndex) => {
+    const list = carouselList.map(item => Object.assign(item, { current: false }));
     (list[selectedIndex] || list[0]).current = true;
     setCarouselItems(list);
-  }
+  }, []);
 
   React.useEffect(() => {
-    const interval = window.setInterval(() => {
+    const timeout = window.setTimeout(() => {
       const currentIndex = carouselItems.findIndex(item => item.current);
-      selectCarouselItem(currentIndex+1);
+      selectCarouselItem(currentIndex + 1);
     }, 4000);
-    return () => clearInterval(interval);
-  });
+    
+    return () => clearTimeout(timeout);
+  }, [carouselItems, selectCarouselItem]);
 
   React.useEffect(() => {
     picturesService.getCount().then(res => setCount(res.count));

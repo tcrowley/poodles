@@ -12,7 +12,7 @@ function About() {
 
   React.useEffect(() => {
     document.title = 'Pampered Poodles 4 U - About Us';
-  });
+  }, []);
 
   return (
     <>

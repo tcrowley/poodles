@@ -14,7 +14,7 @@ function Treats() {
 
   React.useEffect(() => {
     document.title = 'Pampered Poodles 4 U - Treat Recipes';
-  });
+  }, []);
 
   return (
     <div className="app-treats">
