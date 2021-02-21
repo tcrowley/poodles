@@ -80,7 +80,7 @@ function Home() {
 
       { haveAvailablePuppies && 
         <p>
-          <strong>We have puppies! <Link to="/puppies">See who's available for adoption.</Link></strong>
+          <strong>We have puppies! <Link to="/availablepuppies">See who's available for adoption.</Link></strong>
         </p>
       }
 

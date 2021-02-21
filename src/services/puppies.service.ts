@@ -1,3 +1,4 @@
+import { Litter, Pup } from "models/puppy.model";
 
 function handleErrors(response) {
     if (!response.ok) {
@@ -7,11 +8,23 @@ function handleErrors(response) {
 }
 
 const puppiesService = {
-    getAvailablePuppies() {
+    getAvailablePuppies(): Promise<{ puppies: Pup[] }> {
         return fetch('https://pamperedpoodles4u.net/PHP/api/availablePuppies.php')
             .then(handleErrors)
             .then(response => response.json());
-    }
+    },
+
+    getPuppy(id): Promise<{ puppy: Pup | null }> {
+        return fetch(`https://pamperedpoodles4u.net/PHP/api/puppy.php?id=${id}`)
+          .then(handleErrors)
+          .then(response => response.json());
+    },
+
+    getLitter(id): Promise<{ litter: Litter | null }> {
+        return fetch(`https://pamperedpoodles4u.net/PHP/api/litter.php?id=${id}`)
+          .then(handleErrors)
+          .then(response => response.json());
+    },
 }
 
 export default puppiesService;

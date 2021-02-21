@@ -19,7 +19,7 @@ function Header() {
         <Link to="/" className="logo">Pampered Poodles <small>4 U</small></Link>
 
         <nav aria-label="Main" className="app-main-nav">
-            <Link to="/puppies">See the Puppies</Link>
+            <Link to="/availablepuppies">See the Puppies</Link>
             <Link to="/girls">Meet the Parents</Link>
             <Link to="/about">Get to Know Us</Link>
         </nav>
@@ -33,7 +33,7 @@ function Header() {
             <button type="button" className="close-menu-action" aria-label="Navigation Menu">
              Close Menu <FontAwesomeIcon icon={faTimes} size="2x" />
             </button>
-            <Link to="/puppies">See the Puppies</Link>
+            <Link to="/availablepuppies">See the Puppies</Link>
             <Link to="/girls">Meet the Parents</Link>
             <Link to="/about">Get to Know Us</Link>
           </nav>

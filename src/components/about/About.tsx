@@ -20,7 +20,7 @@ function About() {
       
       <h1 className="app-h1">About Us</h1>
       <p className="about-us-intro">
-        We are a family of standard poodle enthusiasts in mid-Michigan. We proudly brag about our <strong>eight</strong> generations of wonderful poodles, many of which have lived to 15 years old. Follow us on <a href="https://www.facebook.com/125192348492/" target="_blank" rel="noopener noreferrer">FaceBook</a>!
+        We are a family of standard poodle enthusiasts in mid-Michigan. We proudly brag about our <strong>seven</strong> generations of wonderful poodles, many of which have lived to 15 years old. Follow us on <a href="https://www.facebook.com/125192348492/" target="_blank" rel="noopener noreferrer">FaceBook</a>!
       </p>
 
       <article className="app-content-with-media">

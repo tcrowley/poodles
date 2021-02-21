@@ -16,9 +16,11 @@ import Dog from 'components/parents/Dog';
 import Girls from 'components/parents/Girls';
 import Studs from 'components/parents/Studs';
 
-import Puppies from 'components/puppies/Puppies';
+import Available from 'components/puppies/Available';
+import Puppy from 'components/puppies/Puppy';
 
 import './App.css';
+import Litter from 'components/puppies/Litter';
 
 function App() {
   return (
@@ -53,8 +55,14 @@ function App() {
             <Route path="/dog/:id">
               <Dog />
             </Route>
-            <Route path="/puppies">
-              <Puppies />
+            <Route path="/availablepuppies">
+              <Available />
+            </Route>
+            <Route path="/litter/:id">
+              <Litter />
+            </Route>
+            <Route path="/puppy/:id">
+              <Puppy />
             </Route>
             <Route path="*">
               <ErrorPage />

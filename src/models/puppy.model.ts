@@ -1,9 +1,31 @@
+import { PictureInfo } from "./picture.model";
+
 export interface Litter {
     id: string;
-    mother: string;
-    father: string;
+    femaleId: string;
+    female: string;
+    femalePictureId: string;
+    maleId: string;
+    male: string;
+    malePictureId: string;
+    litterPictureId: string;
     dateOfBirth: string;
-    registration: string;
     comments: string;
     theme: string;
+    registrationId: string;
+    registration: string;
+    pictures: PictureInfo[];
+    puppies: Pup[];
+}
+
+export interface Pup {
+    puppyId: string;
+    name: string;
+    nickName: string;
+    pictureId: string;
+    litterId: string;
+    saleStatus: string;
+    dateOfBirth: string;
+    female: string;
+    male: string;
 }

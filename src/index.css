@@ -176,7 +176,7 @@ main {
   overflow: auto;
 }
 
-summary .app-h2 {
+summary > * {
   display: inline-block;
   margin-bottom: calc(var(--default-margin) * 0.5);
   vertical-align: -0.1em;
