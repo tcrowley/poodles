@@ -20,7 +20,7 @@ import Available from 'components/puppies/Available';
 import Puppy from 'components/puppies/Puppy';
 
 import './App.css';
-import Litter from 'components/puppies/Litter';
+import Nursery from 'components/puppies/Nursery';
 
 function App() {
   return (
@@ -59,7 +59,7 @@ function App() {
               <Available />
             </Route>
             <Route path="/litter/:id">
-              <Litter />
+              <Nursery />
             </Route>
             <Route path="/puppy/:id">
               <Puppy />

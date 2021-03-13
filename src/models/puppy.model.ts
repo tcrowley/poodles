@@ -19,11 +19,13 @@ export interface Litter {
 }
 
 export interface Pup {
-    puppyId: string;
+    id: string;
     name: string;
     nickName: string;
     pictureId: string;
     litterId: string;
+    sex: string;
+    saleStatusId: string;
     saleStatus: string;
     dateOfBirth: string;
     female: string;

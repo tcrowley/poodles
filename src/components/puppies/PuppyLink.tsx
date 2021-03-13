@@ -5,14 +5,14 @@ import { Link } from "react-router-dom";
 
 function PuppyLink({ pup, showPendingOnly = false }: { pup: Pup; showPendingOnly?: boolean; }) {
   return (
-    <Link to={`/puppy/${pup.puppyId}`}>
+    <Link to={`/puppy/${pup.id}`}>
       <figure>
         <img src={`https://pamperedpoodles4u.net//PHP/util/view.php?id=${pup.pictureId}`} alt="" />
         <figcaption>
           { pup.name } 
-          { showPendingOnly && pup.saleStatus === 'P' && 
+          { showPendingOnly && pup.saleStatusId === 'P' && 
             <span className="banner">
-              <FontAwesomeIcon icon={faHeart} transform="rotate--20" /> Adoption Pending <FontAwesomeIcon icon={faHeart}  transform="rotate-20"/> 
+              <FontAwesomeIcon icon={faHeart} transform="rotate--20" /> { pup.saleStatus } <FontAwesomeIcon icon={faHeart}  transform="rotate-20"/> 
             </span>
           }
           { !showPendingOnly && <span className="banner">{ pup.saleStatus }</span> }

@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import Wait from 'components/common/Wait';
 import PuppyAgreement from './PuppyAgreement';
@@ -6,13 +6,15 @@ import PuppyLink from './PuppyLink';
 import puppiesService from 'services/puppies.service';
 import { formatDisplayDate } from 'services/date.util';
 import { Litter, Pup } from 'models/puppy.model';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faPaw } from '@fortawesome/free-solid-svg-icons';
 
 function Available() {
   const [pupsByLitter, setPupsByLitter] = useState<Record<string, Pup[]>>({});
   const [litters, setLitters] = useState<Litter[]>([]);
-  const [loading, setLoading] = React.useState(true);
+  const [loading, setLoading] = useState(true);
 
-  React.useEffect(() => {
+  useEffect(() => {
     document.title = 'Pampered Poodles 4 U - Puppies';
   }, []);
 
@@ -49,11 +51,21 @@ function Available() {
             { litters.map(litter => (
               <article key={litter.id}>
                 <h2 className="app-h3">{ litter.female } and { litter.male } babies born { formatDisplayDate(litter.dateOfBirth) }</h2>
-                <p>Check <Link to={`/litter/${ litter.id }`}>here</Link> for details and daily group pictures!</p>
+                <p className="app-h5">
+                <Link to={`/litter/${ litter.id }`}></Link>
+                  Check the <Link to={`/litter/${ litter.id }`}>
+                  <span className="fa-layers fa-fw fa-lg">
+                    <FontAwesomeIcon icon={faPaw} size="xs" transform="rotate-10 shrink-5 left-4 down-8"  />
+                    <FontAwesomeIcon icon={faPaw} size="xs" transform="rotate-20 shrink-5 right-6"  />
+                  </span>
+                  nursery
+                  <span className="fa-layers fa-fw fa-lg">
+                    <FontAwesomeIcon icon={faPaw} size="xs" transform="rotate-10 shrink-5 left-4 down-8"  />
+                    <FontAwesomeIcon icon={faPaw} size="xs" transform="rotate-20 shrink-5 right-6"  />
+                  </span></Link> for details and daily group pictures!  
+                </p>
                 <div className="app-gallery captioned">
-                  { pupsByLitter[litter.id].map((pup) => (
-                    <PuppyLink key={pup.puppyId} pup={pup} showPendingOnly={true} />) 
-                  )}
+                  { pupsByLitter[litter.id].map((pup) => <PuppyLink key={pup.id} pup={pup} showPendingOnly={true} />) }
                 </div>
               </article>
             ))}
