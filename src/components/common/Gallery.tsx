@@ -22,7 +22,7 @@ function Gallery({ pictures = [] }: { pictures: PictureInfo[] | undefined }) {
 
   return (
     <>
-      <div className="app-gallery show-placeholder" ref={gallery}>
+      <div className="app-gallery show-placeholder captioned" ref={gallery}>
         { pictures.map((pic: PictureInfo) => <GalleryImage pic={pic} key={pic.id} />)}
       </div>
     </>

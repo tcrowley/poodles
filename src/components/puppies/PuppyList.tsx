@@ -2,7 +2,13 @@ import React, { useEffect, useState } from 'react';
 import { Pup } from "models/puppy.model";
 import PuppyLink from './PuppyLink';
 
-function PuppyList({ pups, groupByGender = true }: { pups: Pup[]; groupByGender?: boolean }) {
+interface PuppyListProps {
+  pups: Pup[]; 
+  groupByGender?: boolean;
+  showPendingOnly?: boolean;
+}
+
+function PuppyList({ pups, groupByGender = true, showPendingOnly = false }: PuppyListProps) {
   const [girls, setGirls] = useState<Pup[]>([]);
   const [boys, setBoys] = useState<Pup[]>([]);
   
@@ -19,7 +25,7 @@ function PuppyList({ pups, groupByGender = true }: { pups: Pup[]; groupByGender?
             <h3 className="app-h3">Sisters</h3>
             <div className="app-gallery captioned">
               { girls.map((pup, index) => (
-                <PuppyLink key={index} pup={pup} />) 
+                <PuppyLink key={index} pup={pup} showPendingOnly={showPendingOnly} />) 
               )}
             </div>
           </>
@@ -29,7 +35,9 @@ function PuppyList({ pups, groupByGender = true }: { pups: Pup[]; groupByGender?
           <>
             <h3 className="app-h3">Brothers</h3>
             <div className="app-gallery captioned">
-              { boys.map((pup) => <PuppyLink key={pup.id} pup={pup} />) }
+              { boys.map((pup) => (
+                <PuppyLink key={pup.id} pup={pup} showPendingOnly={showPendingOnly} />)
+               )}
             </div>
           </>
         )}
@@ -38,7 +46,7 @@ function PuppyList({ pups, groupByGender = true }: { pups: Pup[]; groupByGender?
       { !groupByGender && (
           <div className="app-gallery captioned">
             { pups.map((pup) => (
-              <PuppyLink key={pup.id} pup={pup} />) 
+              <PuppyLink key={pup.id} pup={pup} showPendingOnly={showPendingOnly} />) 
             )}
           </div>
       )}

@@ -78,6 +78,10 @@ img {
   vertical-align: middle;
 }
 
+p {
+  max-width: 48em;
+}
+
 p, ul, dl, address {
   margin: 0;
   margin-bottom: var(--default-margin);

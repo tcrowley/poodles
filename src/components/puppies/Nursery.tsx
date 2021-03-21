@@ -72,7 +72,7 @@ function Nursery() {
         </Link>
       </div>
 
-      <h2 className="app-h3">Meet the siblings</h2>
+      <h2 className="app-h3">Meet the puppies</h2>
       <PuppyList pups={litter.puppies} groupByGender={false} />
 
       { !!litter.pictures.length && (<>

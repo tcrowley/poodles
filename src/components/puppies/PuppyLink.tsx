@@ -7,7 +7,7 @@ function PuppyLink({ pup, showPendingOnly = false }: { pup: Pup; showPendingOnly
   return (
     <Link to={`/puppy/${pup.id}`}>
       <figure>
-        <img src={`https://pamperedpoodles4u.net//PHP/util/view.php?id=${pup.pictureId}`} alt="" />
+        <img src={`https://pamperedpoodles4u.net//PHP/util/view.php?id=${pup.pictureId || pup.mainPicture}`} alt="" />
         <figcaption>
           { pup.name } 
           { showPendingOnly && pup.saleStatusId === 'P' && 

@@ -81,7 +81,7 @@ function Available() {
             </p>
 
             <details>
-              <summary><h2 className="app-h5">Want to reserve a puppy from an upcoming litter?</h2></summary>
+              <summary><h2 className="app-h6">Want to reserve a puppy from an upcoming litter?</h2></summary>
               <p>
                 $100 will reserve your puppy before birth - Deposit is not refundable but can be moved to another litter (no time limit). We can make initial arrangements via email, but a home for a new baby is too important to do without a live phone conversation. Another deposit of half the puppy price is requested once you have selected your baby. I accept checks for deposit but request balance in cash.
               </p>

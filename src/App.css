@@ -132,6 +132,7 @@
 .app-header .logo:focus,
 .app-header .logo:active {
   text-decoration: none;
+  margin-bottom: 0;
 }
 
 .app-header .poodle-icon {
@@ -258,8 +259,8 @@
 
 .app-gallery {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(18em, 1fr));
-  grid-auto-rows: minmax(20em, 30vh);
+  grid-template-columns: repeat(auto-fill, minmax(14em, 1fr));
+  grid-auto-rows: minmax(18em, 25vh);
   grid-gap: var(--default-margin);
   margin-bottom: var(--default-margin);
 }
@@ -324,7 +325,7 @@
 }
 
 .app-gallery.captioned {
-  grid-auto-rows: minmax(24em, 30vh);
+  grid-auto-rows: minmax(21em, 25vh);
 }
 
 .app-gallery.show-placeholder img {
@@ -540,12 +541,6 @@
 
 .app-quote blockquote {
   margin: 0;
-}
-
-.app-faq p,
-.app-faq ul,
-.app-puppy-agreement p {
-  max-width: 48em;
 }
 
 .app-treats article {
