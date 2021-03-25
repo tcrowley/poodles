@@ -78,23 +78,25 @@ function Home() {
       <h1 className="app-h1">Mid-Michigan Standard Poodles</h1>
       <p className="app-lead-paragraph">Loving, smart, beautiful, and calm. We have your new best friend!</p>
 
-      { haveAvailablePuppies && 
+      <div className="app-card">
+        { haveAvailablePuppies && 
+          <p>
+            <strong>We have puppies! <Link to="/availablepuppies">See who's available for adoption.</Link></strong>
+          </p>
+        }
+
         <p>
-          <strong>We have puppies! <Link to="/availablepuppies">See who's available for adoption.</Link></strong>
+          New pictures posted for every puppy every day they are with us. We have <strong>{ count }</strong> pictures and counting! 
         </p>
-      }
 
-      <p>
-        New pictures posted for every puppy every day they are with us. We have <strong>{ count }</strong> pictures and counting! 
-      </p>
+        <p>
+          If you <em>are</em> considering adopting one of our babies, please take some time to read about <Link to="/about">who we are and what we do</Link> first!
+        </p>
 
-      <p>
-        If you <em>are</em> considering adopting one of our babies, please take some time to read about <Link to="/about">who we are and what we do</Link> first!
-      </p>
-
-      <p>
-        Looking for news and updates? Want to join in the birthday celebrations? Get pupdates from the pups in their new homes? Follow us on <a href="https://www.facebook.com/125192348492/" target="_blank" rel="noopener noreferrer">FaceBook</a>.
-      </p>
+        <p>
+          Looking for news and updates? Want to join in the birthday celebrations? Get pupdates from the pups in their new homes? Follow us on <a href="https://www.facebook.com/125192348492/" target="_blank" rel="noopener noreferrer">FaceBook</a>.
+        </p>
+      </div>
     </div>
   );
 }

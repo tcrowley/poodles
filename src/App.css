@@ -484,6 +484,7 @@ a:active > .app-action-icon {
 .home-content {
   display: flex;
   flex-direction: column;
+  max-width: 50em;
 }
 
 .home-content .app-h1,
@@ -540,6 +541,11 @@ a:active > .app-action-icon {
 @media only screen and (min-width: 1200px) { 
   .home-content {
     display: block;
+    max-width: none;
+  }
+
+  .home-content .app-card {
+    max-width: 45%;
   }
 
   .app-carousel {
