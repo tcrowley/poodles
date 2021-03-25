@@ -43,42 +43,40 @@ function Dog() {
       <BackSubNav />
      
       <h1 className="app-h1">
-        { dog?.fullName } 
-        { dog?.fullName !== dog?.nickName && `(${ dog?.nickName })` }
+        { dog.fullName } 
+        { dog.fullName !== dog.nickName && `(${ dog.nickName })` }
       </h1>
       <p className="app-lead-paragraph">
-        Our <span className="lowercase">{ dog?.color } { dog?.sexDescription }</span> born { formatDisplayDate(dog?.dateOfBirth) }.
+        Our <span className="lowercase">{ dog.color } { dog.sexDescription }</span> born { formatDisplayDate(dog.dateOfBirth) }.
       </p>
 
-      <p>
-        { dog?.dateOfDeath &&
-          `${ dog?.nickName } left us ${ formatDisplayDate(dog?.dateOfDeath) } when ${ dog?.sex === 'M' ? 'he' : 'she' } was ${ calculateAge(dog?.dateOfBirth, dog?.dateOfDeath) } years old. If love alone could keep them alive, they’d live forever.`
-        }
-      </p>
+      { !!(dog.comments || dog.dateOfDeath || dog.retired === 'Y') && <div className="app-card">
+        { dog.dateOfDeath && <p>
+          { dog.nickName } left us { formatDisplayDate(dog.dateOfDeath) } when { dog.sex === 'M' ? 'he' : 'she' } was { calculateAge(dog.dateOfBirth, dog.dateOfDeath) } years old. If love alone could keep them alive, they’d live forever.
+        </p> }
 
-      <p>
-        { !dog?.dateOfDeath && dog?.retired === 'Y' &&
-          `${ dog?.nickName } is enjoying the pampered pet life and will not being having any more babies.`
-        }
-      </p>
+        { !dog.dateOfDeath && dog.retired === 'Y' && <p>
+          { dog.nickName } is enjoying the pampered pet life and will not being having any more babies.
+        </p> }
       
-      { dog?.comments && <p>{ dog?.comments }</p> }
+        { dog.comments && <p>{ dog.comments }</p> }
+      </div> }
 
       <details>
-        <summary>Facts about { dog?.nickName }</summary>
+        <summary>Facts about { dog.nickName }</summary>
         <dl>
-          { dog?.height && <><div><dt>Height:</dt> <dd>{ dog?.height }"</dd></div></> }
-          { dog?.weight && <><div><dt>Weight:</dt> <dd>{ dog?.weight } lbs</dd></div></> }
-          { dog?.registration && <><div><dt>Registration:</dt> <dd>{ dog?.registration }</dd></div></> }
-          { dog?.testingInfo && <><div><dt>Testing Info:</dt> <dd>{ dog?.testingInfo }</dd></div></> }
+          { dog.height && <><div><dt>Height:</dt> <dd>{ dog.height }"</dd></div></> }
+          { dog.weight && <><div><dt>Weight:</dt> <dd>{ dog.weight } lbs</dd></div></> }
+          { dog.registration && <><div><dt>Registration:</dt> <dd>{ dog.registration }</dd></div></> }
+          { dog.testingInfo && <><div><dt>Testing Info:</dt> <dd>{ dog.testingInfo }</dd></div></> }
         </dl>
       </details>
 
-      { !!dog?.litters.length &&
+      { !!dog.litters.length &&
         <details>
           <summary>Past Litters</summary>
           <ul className="app-list">
-            { dog?.litters.map((litter: Litter) => (
+            { dog.litters.map((litter: Litter) => (
               <li key={litter.id}>
                 <Link to={`/litter/${ litter.id }`}>{ litter.theme }</Link> <span className="app-supplimental-text">({ formatDisplayDate(litter.dateOfBirth, {}) })</span>
               </li>
@@ -89,7 +87,7 @@ function Dog() {
 
       <br />
 
-      <Gallery pictures={dog?.pictures} />
+      <Gallery pictures={dog.pictures} />
     </>
   );
 }

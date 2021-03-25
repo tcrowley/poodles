@@ -41,7 +41,7 @@ function GalleryImage({ pic }: { pic: PictureInfo }) {
       <button type="button" className="button-link" onClick={() => showFullImage()}>
         <figure>
           <img data-src={`https://pamperedpoodles4u.net//PHP/util/view.php?id=${pic.id}`} alt="" />
-          <figcaption>{ pic.caption }</figcaption>
+          <figcaption dangerouslySetInnerHTML={{ __html: pic.caption }}></figcaption>
         </figure>
       </button>
 
@@ -50,7 +50,7 @@ function GalleryImage({ pic }: { pic: PictureInfo }) {
           <span className="app-gallery-image-container">
             <figure onClick={(event) => event.stopPropagation() }>
               <img src={`https://pamperedpoodles4u.net//PHP/util/view.php?id=${pic.id}`} alt="" />
-              <figcaption>{ pic.caption }</figcaption>
+              <figcaption dangerouslySetInnerHTML={{ __html: pic.caption }}></figcaption>
             </figure>
 
             <button type="button" className="app-action-icon" onClick={() => setShowFull(false)} aria-label="Close">

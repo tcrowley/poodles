@@ -23,10 +23,8 @@ function Treats() {
       <h1 className="app-h1">Treats my poodles love!</h1>
       <p className="app-lead-paragraph">Easy to make, most of the ingredents you have in your kitchen!</p>
 
-      <hr />
-
       <article className="app-content-with-media">
-        <div>
+        <div className="app-card">
           <h2 className="app-h2">Turkey Treats</h2>
           <h3 className="app-h6">Ingredients:</h3>
           <ul>
@@ -47,10 +45,8 @@ function Treats() {
         </div>
       </article>
 
-      <hr />
-
       <article className="app-content-with-media">
-        <div>
+        <div className="app-card">
           <h2 className="app-h2">K-9 Peanut Butter Cookies</h2>
           <h3 className="app-h6">Ingredients:</h3>
           <ul>
@@ -70,10 +66,8 @@ function Treats() {
         </div>
       </article>
 
-      <hr />
-
       <article className="app-content-with-media">
-        <div>
+        <div className="app-card">
           <h2 className="app-h2">Cheddar Biscuits</h2>
           <h3 className="app-h5">Ingredients:</h3>
           <ul>
@@ -93,10 +87,8 @@ function Treats() {
         </div>
       </article>
 
-      <hr />
-
       <article className="app-content-with-media">
-        <div>
+        <div className="app-card">
           <h2 className="app-h2">Tuna Treats</h2>
           <h3 className="app-h5">Ingredients:</h3>
           <ul>
@@ -115,10 +107,8 @@ function Treats() {
         </div>
       </article>
 
-      <hr />
-
       <article className="app-content-with-media">
-        <div>
+        <div className="app-card">
           <h2 className="app-h2">Tempting Tomato Bites</h2>
           <h3 className="app-h5">Ingredients:</h3>
           <ul>
@@ -141,10 +131,8 @@ function Treats() {
         </div>
       </article>
 
-      <hr />
-
       <article className="app-content-with-media">
-        <div>
+        <div className="app-card">
           <h2 className="app-h2">Liver Snacks</h2>
           <h3 className="app-h5">Ingredients:</h3>
           <ul>
@@ -165,10 +153,8 @@ function Treats() {
         </div>
       </article>
 
-      <hr />
-
       <article className="app-content-with-media">
-        <div>
+        <div className="app-card">
           <h2 className="app-h2">Bacon Bites</h2>
           <h3 className="app-h5">Ingredients:</h3>
           <ul>
@@ -190,10 +176,8 @@ function Treats() {
         </div>
       </article>
 
-      <hr />
-
       <article className="app-content-with-media">
-        <div>
+        <div className="app-card">
           <h2 className="app-h2">Cheesy Treats</h2>
           <h3 className="app-h5">Ingredients:</h3>
           <ul>
@@ -215,10 +199,8 @@ function Treats() {
         </div>
       </article>
 
-      <hr />
-
       <article className="app-content-with-media">
-        <div>
+        <div className="app-card">
           <h2 className="app-h2">Cheese Cookies</h2>
           <h3 className="app-h5">Ingredients:</h3>
           <ul>

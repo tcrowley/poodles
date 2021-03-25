@@ -18,16 +18,18 @@ function Reunions() {
       <h1 className="app-h1">Pet Park Reunions</h1>
       <p className="app-lead-paragraph">Where our poodles go to play!</p>
 
-      <p>
-        We host poodle reunions at our private Pet Park twice a year, on the Saturday before Memorial Day and the Saturday after Labor Day.
-      </p>
-      <p>
-        Check out our <a href="https://www.facebook.com/125192348492/photos/?tab=album" target="_blank" rel="noopener noreferrer">FaceBook Albums</a> for pictures of past events.
-      </p>
+      <div className="app-card">
+        <p>
+          We host poodle reunions at our private Pet Park twice a year, on the Saturday before Memorial Day and the Saturday after Labor Day.
+        </p>
+        <p>
+          Check out our <a href="https://www.facebook.com/125192348492/photos/?tab=album" target="_blank" rel="noopener noreferrer">FaceBook Albums</a> for pictures of past events.
+        </p>
 
-      <address>
-        <a href="https://goo.gl/maps/q62tE1jo6Fe8gyJB8" target="_blank" rel="noopener noreferrer">13746 60th Ave, <br />Remus, MI 49340</a>
-      </address>
+        <address>
+          <a href="https://goo.gl/maps/q62tE1jo6Fe8gyJB8" target="_blank" rel="noopener noreferrer">13746 60th Ave, <br />Remus, MI 49340</a>
+        </address>
+      </div>
 
       <div className="app-gallery">
         <img src={aerialImg} alt="aerial view of the pet park" />

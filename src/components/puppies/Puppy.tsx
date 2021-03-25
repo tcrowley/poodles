@@ -102,27 +102,29 @@ function Puppy() {
         { puppy.color } { puppy.sex }
       </p>
 
-      <p>
-      { puppy.nickName || puppy.name } is a <Link to={`/dog/${puppy.litter.femaleId}`}>{ puppy.litter.female }</Link> and <Link to={`/dog/${puppy.litter.maleId}`}>{ puppy.litter.male }</Link> baby from our <Link to={`/litter/${ puppy.litter.id }`}>{ puppy.litter.theme }</Link> litter born { formatDisplayDate(puppy.litter.dateOfBirth) }.
-      </p>
-
-      <p><strong>{ getStatusText() }</strong></p>
-      { puppy.saleStatusId === 'A' && <><PuppyAgreement /><br /></> }
-      
-      { !!puppy.family && 
+      <div className="app-card">
         <p>
-          { puppy.nickName || puppy.name } 
-          { hasDepartureDate() && new Date() >= (getDepartureDate() || 0) ? ' went ' : ' is going ' } 
-          home with the { puppy.family } family { !!puppy.homeTown && <> ({ puppy.homeTown }) </>}
-          { hasDepartureDate() && <> on { formatDisplayDate(puppy.departureDate, { month: 'long', day: 'numeric' }) }</> }. 
-          
-          { !!puppy.newName && ![puppy.name, puppy.nickName].includes(puppy.newName) && <>{ puppy.sex === 'Girl' ? ' Her' : ' His' } new name is { puppy.newName }! </> }
-          
-          { !!puppy.newName && [puppy.name, puppy.nickName].includes(puppy.newName) && <>{ puppy.sex === 'Girl' ? ' She ' : ' He ' } is keeping { puppy.sex === 'Girl' ? ' her ' : ' his ' } name! </> }
+        { puppy.nickName || puppy.name } is a <Link to={`/dog/${puppy.litter.femaleId}`}>{ puppy.litter.female }</Link> and <Link to={`/dog/${puppy.litter.maleId}`}>{ puppy.litter.male }</Link> baby from our <Link to={`/litter/${ puppy.litter.id }`}>{ puppy.litter.theme }</Link> litter born { formatDisplayDate(puppy.litter.dateOfBirth) }.
         </p>
-      }
 
-      <p>{ puppy.comments }</p>
+        <p><strong>{ getStatusText() }</strong></p>
+        { puppy.saleStatusId === 'A' && <><PuppyAgreement /><br /></> }
+        
+        { !!puppy.family && 
+          <p>
+            { puppy.nickName || puppy.name } 
+            { hasDepartureDate() && new Date() >= (getDepartureDate() || 0) ? ' went ' : ' is going ' } 
+            home with the { puppy.family } family { !!puppy.homeTown && <> ({ puppy.homeTown }) </>}
+            { hasDepartureDate() && <> on { formatDisplayDate(puppy.departureDate, { month: 'long', day: 'numeric' }) }</> }. 
+            
+            { !!puppy.newName && ![puppy.name, puppy.nickName].includes(puppy.newName) && <>{ puppy.sex === 'Girl' ? ' Her' : ' His' } new name is { puppy.newName }! </> }
+            
+            { !!puppy.newName && [puppy.name, puppy.nickName].includes(puppy.newName) && <>{ puppy.sex === 'Girl' ? ' She ' : ' He ' } is keeping { puppy.sex === 'Girl' ? ' her ' : ' his ' } name! </> }
+          </p>
+        }
+
+        <p>{ puppy.comments }</p>
+      </div>
 
       <details>
         <summary>See { puppy.nickName || puppy.name }'s siblings!</summary>

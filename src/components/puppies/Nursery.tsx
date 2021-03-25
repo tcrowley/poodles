@@ -51,12 +51,12 @@ function Nursery() {
           'All the puppies in this litter have homes' }
       </p>
       
-      <p>
+      <p className="app-card">
         Born { formatDisplayDate(litter.dateOfBirth) }. { !!litter.comments && litter.comments }
       </p>
 
       <h2 className="app-h3">See the parents</h2>
-      <div className="app-gallery captioned">
+      <div className="app-gallery captioned fill">
         <Link to={`/dog/${litter.femaleId}`}>
           <figure>
             <img src={`https://pamperedpoodles4u.net//PHP/util/view.php?id=${litter.femalePictureId}`} alt="" />

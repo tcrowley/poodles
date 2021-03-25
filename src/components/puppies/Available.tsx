@@ -77,7 +77,9 @@ function Available() {
             <p className="app-lead-paragraph">Sadly, we don't have any puppies available at the moment.</p>
 
             <p>
-              Contact us at <a href="mailto:bjdpamperedpets@yahoo.com">bjdpamperedpets@yahoo.com</a> or <a href="tel:231-972-7592">(231) 972-7592</a> to find out who we hope to have soon.
+              <strong>
+                Contact us at <a href="mailto:bjdpamperedpets@yahoo.com">bjdpamperedpets@yahoo.com</a> or <a href="tel:231-972-7592">(231) 972-7592</a> to find out who we hope to have soon.
+              </strong>
             </p>
 
             <details>

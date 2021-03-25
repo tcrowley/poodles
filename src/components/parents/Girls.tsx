@@ -32,7 +32,7 @@ function Girls() {
         <h1 className="app-h1">Our Beautiful Girls</h1>
         <p className="app-lead-paragraph">Our fabulous, loving girls!</p>
 
-        <div className="app-gallery captioned">
+        <div className="app-gallery captioned fill">
           { activeDogs.map((dog) => ( 
             <Link key={dog.id} to={`/dog/${dog.id}`}>
               <figure>
@@ -46,7 +46,7 @@ function Girls() {
         <h2 className="app-h1">Our Retired Girls</h2>
         <p className="app-lead-paragraph">These girls' job is enjoying the pampered pet life.</p>
 
-        <div className="app-gallery captioned">
+        <div className="app-gallery captioned fill">
           { retiredDogs.map((dog) => ( 
             <Link key={dog.id} to={`/dog/${dog.id}`}>
               <figure>
@@ -60,7 +60,7 @@ function Girls() {
         <h2 className="app-h1">In Loving Memory</h2>
         <p className="app-lead-paragraph">We'll see them again at the rainbow bridge.</p>
 
-        <div className="app-gallery captioned">
+        <div className="app-gallery captioned fill">
           { passedDogs.map((dog) => ( 
             <Link key={dog.id} to={`/dog/${dog.id}`}>
               <figure>
