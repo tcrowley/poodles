@@ -4,7 +4,7 @@ function PuppyAgreement() {
       <details>
         <summary>Cost and Shipping</summary>
         <p>
-          All of our puppies are $1,800. Sorry we will not reduce the price of our puppies! We don't want to be "rid" of them. We have wonderful puppies that have been loved every moment of their lives, I owe it to them to find them families that will cherish them as we do.
+          All of our puppies are $2,200. Sorry we will not reduce the price of our puppies! We don't want to be "rid" of them. We have wonderful puppies that have been loved every moment of their lives, I owe it to them to find them families that will cherish them as we do.
         </p>
 
         <p>

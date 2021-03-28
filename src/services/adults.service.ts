@@ -9,13 +9,13 @@ function handleErrors(response) {
 
 const adultsService = {
   getAdults(): Promise<{ adults: Adult[] }> {
-    return fetch('https://pamperedpoodles4u.net/PHP/api/adults.php')
+    return fetch('https://pamperedpoodles4u.com/PHP/api/adults.php')
       .then(handleErrors)
       .then(response => response.json());
   },
 
   getAdult(id): Promise<{ adult: Adult | null }> {
-    return fetch(`https://pamperedpoodles4u.net/PHP/api/adult.php?id=${id}`)
+    return fetch(`https://pamperedpoodles4u.com/PHP/api/adult.php?id=${id}`)
       .then(handleErrors)
       .then(response => response.json());
   }
