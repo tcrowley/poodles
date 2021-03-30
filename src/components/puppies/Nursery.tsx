@@ -59,14 +59,14 @@ function Nursery() {
       <div className="app-gallery captioned fill">
         <Link to={`/dog/${litter.femaleId}`}>
           <figure>
-            <img src={`https://pamperedpoodles4u.com//PHP/util/view.php?id=${litter.femalePictureId}`} alt="" />
+            <img src={`https://pamperedpoodles4u.com/PHP/util/view.php?id=${litter.femalePictureId}`} alt="" />
             <figcaption>{ litter.female }</figcaption>
           </figure>
         </Link>
       
         <Link to={`/dog/${litter.maleId}`}>
           <figure>
-            <img src={`https://pamperedpoodles4u.com//PHP/util/view.php?id=${litter.malePictureId}`} alt="" />
+            <img src={`https://pamperedpoodles4u.com/PHP/util/view.php?id=${litter.malePictureId}`} alt="" />
             <figcaption>{ litter.male }</figcaption>
           </figure>
         </Link>

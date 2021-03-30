@@ -40,7 +40,7 @@ function GalleryImage({ pic }: { pic: PictureInfo }) {
     <>
       <button type="button" className="button-link" onClick={() => showFullImage()}>
         <figure>
-          <img data-src={`https://pamperedpoodles4u.com//PHP/util/view.php?id=${pic.id}`} alt="" />
+          <img data-src={`https://pamperedpoodles4u.com/PHP/util/view.php?id=${pic.id}`} alt="" />
           <figcaption dangerouslySetInnerHTML={{ __html: pic.caption }}></figcaption>
         </figure>
       </button>
@@ -49,7 +49,7 @@ function GalleryImage({ pic }: { pic: PictureInfo }) {
         <div className="app-gallery-full-image" onClick={() => setShowFull(false)} onKeyDown={(event) => handleKeyDown(event)} tabIndex={-1} id={`full-image-${pic.id}`}>
           <span className="app-gallery-image-container">
             <figure onClick={(event) => event.stopPropagation() }>
-              <img src={`https://pamperedpoodles4u.com//PHP/util/view.php?id=${pic.id}`} alt="" />
+              <img src={`https://pamperedpoodles4u.com/PHP/util/view.php?id=${pic.id}`} alt="" />
               <figcaption dangerouslySetInnerHTML={{ __html: pic.caption }}></figcaption>
             </figure>
 

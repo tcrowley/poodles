@@ -36,7 +36,7 @@ function Studs() {
           { activeDogs.map((dog) => ( 
             <Link key={dog.id} to={`/dog/${dog.id}`}>
               <figure>
-                <img src={`https://pamperedpoodles4u.com//PHP/util/view.php?id=${dog.mainPictureId}`} alt="" />
+                <img src={`https://pamperedpoodles4u.com/PHP/util/view.php?id=${dog.mainPictureId}`} alt="" />
                 <figcaption>{ dog.nickName }</figcaption>
               </figure>
             </Link>
@@ -50,7 +50,7 @@ function Studs() {
           { retiredDogs.map((dog) => ( 
             <Link key={dog.id} to={`/dog/${dog.id}`}>
               <figure>
-                <img src={`https://pamperedpoodles4u.com//PHP/util/view.php?id=${dog.mainPictureId}`} alt="" />
+                <img src={`https://pamperedpoodles4u.com/PHP/util/view.php?id=${dog.mainPictureId}`} alt="" />
                 <figcaption>{ dog.nickName }</figcaption>
               </figure>
             </Link>
@@ -64,7 +64,7 @@ function Studs() {
           { passedDogs.map((dog) => ( 
             <Link key={dog.id} to={`/dog/${dog.id}`}>
               <figure>
-                <img src={`https://pamperedpoodles4u.com//PHP/util/view.php?id=${dog.mainPictureId}`} alt="" />
+                <img src={`https://pamperedpoodles4u.com/PHP/util/view.php?id=${dog.mainPictureId}`} alt="" />
                 <figcaption>{ dog.nickName }</figcaption>
               </figure>
             </Link>
