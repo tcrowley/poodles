@@ -287,6 +287,7 @@ a:active > .app-action-icon {
 
 .app-gallery > *,
 .app-gallery > button {
+  max-width: 35em;
   background-color: var(--off-white);
   box-shadow: 0 0 5px 2px #bbb;
   outline: none;
@@ -371,6 +372,7 @@ a:active > .app-action-icon {
 }
 
 .app-gallery-full-image {
+  max-width: none;
   position: absolute;
   z-index: 10;
   top: 0;

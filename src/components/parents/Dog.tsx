@@ -46,9 +46,9 @@ function Dog() {
         { dog.fullName } 
         { dog.fullName !== dog.nickName && `(${ dog.nickName })` }
       </h1>
-      <p className="app-lead-paragraph">
+      { dog.display === 'Y' && <p className="app-lead-paragraph">
         Our <span className="lowercase">{ dog.color } { dog.sexDescription }</span> born { formatDisplayDate(dog.dateOfBirth) }.
-      </p>
+      </p> }
 
       { !!(dog.comments || dog.dateOfDeath || dog.retired === 'Y') && <div className="app-card">
         { dog.dateOfDeath && <p>

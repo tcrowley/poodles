@@ -10,6 +10,7 @@ export interface Adult {
     mainPictureId: string;
     dateOfBirth: string;
     dateOfDeath: string;
+    display: string;
     color: string;
     markings: string;
     registration: string;
