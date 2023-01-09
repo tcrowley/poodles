@@ -13,9 +13,9 @@ function Footer() {
               <span className="app-action-icon"><FontAwesomeIcon icon={faEnvelope} /></span>
               <span className="footer-nav-description">bjdpamperedpets@yahoo.com</span>
           </a>
-          <a href="tel:231-972-7592">
+          <a href="tel:231-250-6602">
             <span className="app-action-icon"><FontAwesomeIcon icon={faPhoneAlt} /></span>
-            <span className="footer-nav-description">(231) 972-7592</span>
+            <span className="footer-nav-description">(231) 250-6602</span>
           </a>
           <a href="https://www.facebook.com/125192348492/" target="_blank" rel="noopener noreferrer" aria-label="Follow us on Facebook">
             <span className="app-action-icon"><FontAwesomeIcon icon={faFacebookF} /></span>
