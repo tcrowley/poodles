@@ -17,7 +17,7 @@ function Footer() {
             <span className="app-action-icon"><FontAwesomeIcon icon={faPhoneAlt} /></span>
             <span className="footer-nav-description">(231) 250-6602</span>
           </a>
-          <a href="https://www.facebook.com/125192348492/" target="_blank" rel="noopener noreferrer" aria-label="Follow us on Facebook">
+          <a href="https://www.facebook.com/pamperedpoodles4u" target="_blank" rel="noopener noreferrer" aria-label="Follow us on Facebook">
             <span className="app-action-icon"><FontAwesomeIcon icon={faFacebookF} /></span>
             <span className="footer-nav-description">Follow Us</span>
           </a>
