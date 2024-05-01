@@ -39,6 +39,7 @@
   box-shadow: 2px 0 0 4px var(--primary);
   font-size: 1.2em;
   font-weight: 700;
+  color: inherit;
   cursor: pointer;
 }
 
@@ -534,6 +535,7 @@ a:active > .app-action-icon {
   font-size: 0.6em;
   opacity: 0.5;
   cursor: pointer;
+  color: inherit;
 }
 
 .app-carousel button.current {
