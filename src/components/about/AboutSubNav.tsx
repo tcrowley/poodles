@@ -3,10 +3,10 @@ import { NavLink } from 'react-router-dom';
 function AboutSubNav() {
   return (
     <nav className="app-sub-nav app-content">
-      <NavLink to="/about" activeClassName="active">About Us</NavLink>
-      <NavLink to="/reunions" activeClassName="active">Reunions</NavLink>
-      <NavLink to="/faq" activeClassName="active">FAQ</NavLink>
-      <NavLink to="/treats" activeClassName="active">Treats</NavLink>
+      <NavLink to="/about" className={({ isActive }) => (isActive ? " active" : "")}>About Us</NavLink>
+      <NavLink to="/reunions" className={({ isActive }) => (isActive ? " active" : "")}>Reunions</NavLink>
+      <NavLink to="/faq" className={({ isActive }) => (isActive ? " active" : "")}>FAQ</NavLink>
+      <NavLink to="/treats" className={({ isActive }) => (isActive ? " active" : "")}>Treats</NavLink>
     </nav>
   );
 }

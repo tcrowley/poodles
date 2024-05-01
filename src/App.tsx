@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 
 import Header from 'components/Header';
 import Footer from 'components/Footer';
@@ -30,44 +30,20 @@ function App() {
       <Wait />
 
       <main className="app-content">
-          <Switch>
-            <Route path="/" exact>
-              <Home />
-            </Route>
-            <Route path="/about">
-              <About />
-            </Route>
-            <Route path="/reunions">
-              <Reunions />
-            </Route>
-            <Route path="/treats">
-              <Treats />
-            </Route>
-            <Route path="/faq">
-              <Faq />
-            </Route>
-            <Route path="/girls">
-              <Girls />
-            </Route>
-            <Route path="/studmuffins">
-              <Studs />
-            </Route>
-            <Route path="/dog/:id">
-              <Dog />
-            </Route>
-            <Route path="/availablepuppies">
-              <Available />
-            </Route>
-            <Route path="/litter/:id">
-              <Nursery />
-            </Route>
-            <Route path="/puppy/:id">
-              <Puppy />
-            </Route>
-            <Route path="*">
-              <ErrorPage />
-            </Route>
-          </Switch>
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/about" element={<About />} />
+            <Route path="/reunions" element={<Reunions />} />
+            <Route path="/treats" element={<Treats />} />
+            <Route path="/faq" element={<Faq />} />
+            <Route path="/girls" element={<Girls />} />
+            <Route path="/studmuffins" element={<Studs />} />
+            <Route path="/dog/:id" element={<Dog />} />
+            <Route path="/availablepuppies" element={<Available />} />
+            <Route path="/litter/:id" element={<Nursery />} />
+            <Route path="/puppy/:id" element={<Puppy />} />
+            <Route path="*" element={<ErrorPage />} />
+          </Routes>
       </main>
 
       <Footer></Footer>
